@@ -1,0 +1,17 @@
+
+@mixin alignColumn ($dir : unset) {
+    display: flex;
+    flex-direction: column;
+    align-items: $dir;
+}
+
+@mixin columnGap ($gap : 0) {
+    display: flex;
+    column-gap: $gap;
+}
+
+@mixin rowGap ($gap : 0) {
+    display: flex;
+    flex-direction: column;
+    row-gap: $gap;
+}
