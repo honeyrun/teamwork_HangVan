@@ -1,0 +1,110 @@
+main {
+    > section {
+        row-gap: 6vh;
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+
+        > section, > aside {
+            width: $contentRatioMob;
+            @include alignColumn;
+        }
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+h3 {
+    font-size: $defaultH3Mob;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+.event {
+
+    > article {
+        width: $contentRatioMob;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > a {
+            @include columnGap(0.7vh);
+            align-items: center;
+            color: $mediumGray;
+        }
+
+        i {
+            font-size: 13px;
+        }
+    }
+
+    > section {
+        @include rowGap(5.5vh);
+    }
+
+    aside {
+        padding: 4%;
+        @include rowGap(1.5vh);
+        color: $mediumGray;
+        line-height: 1.3;
+
+        border: 1px solid $lightgray;
+
+        p {
+            font-size: 17px;
+            color: $mainColor;
+        }
+    }
+
+    h4 {
+        color: $darkGray;
+        font-size: 19px;
+        line-height: 1.4;
+    }
+
+    address {
+        font-style: normal;
+        font-size: 16px;
+    }
+
+    figure {
+        position: relative;
+        display: flex;
+    }
+
+    figcaption {
+        height: 100%;
+        width: 100%;
+        padding: 5%;
+        box-sizing: border-box;
+        position: absolute;
+        color: white;
+        display: flex;
+        justify-content: right;
+
+        p {
+            width: 8vh;
+            height: 4vh;
+            font-weight: 500;
+            font-size: 17px;
+            letter-spacing: 1px;
+            border-radius: 2vh;
+            background-color: $sucColor1;
+            @include alignColumn(center);
+            justify-content: center;
+        }
+
+    }
+
+    img {
+        width: 100%;
+        height: 25vh;
+        object-fit: cover;
+    }
+
+
+
+}

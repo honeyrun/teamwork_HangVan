@@ -12,3 +12,7 @@ main,
 main > section {
     @include alignColumn(center);
 }
+
+a {
+    text-decoration: none;
+}
