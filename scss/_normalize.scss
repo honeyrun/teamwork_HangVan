@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $defaultFont;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main,
+main > section {
+    @include alignColumn(center);
+}
