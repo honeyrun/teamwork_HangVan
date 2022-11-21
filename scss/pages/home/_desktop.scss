@@ -1,0 +1,41 @@
+main {
+    > section {
+        row-gap: 5vh;
+
+        > section, > aside {
+            width: $contentRatioDes;
+        }
+    }
+}
+
+h3 {
+    font-size: $defaultH3Des;
+}
+
+
+.event {
+
+    > article {
+        width: $contentRatioDes;
+    }
+
+    > section {
+        > a {
+            width: 23.5%;
+        }
+    }
+
+    aside {
+        min-height: 38vh;
+        row-gap: 2vh;
+    }
+
+    address, small, label {
+        font-size: 14px;
+    }
+
+    img {
+        height: 22vh;
+    }
+
+}

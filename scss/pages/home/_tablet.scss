@@ -12,6 +12,11 @@ main {
     p {
         font-size: 14px;
     }
+
+    a:hover {
+        transition: .4s;
+
+    }
 }
 
 h3 {
@@ -27,6 +32,11 @@ h3 {
 
         > a {
             font-size: 17px;
+
+            &:hover {
+                color: $sucColor1;
+                text-decoration: underline;
+            }
         }
     }
 
@@ -38,7 +48,7 @@ h3 {
 
         > a {
             width: 47%;
-            transition: .4s;
+            height: fit-content;
 
             &:hover {
                 box-shadow: 0 4px 25px 0 #c0c8b9;
