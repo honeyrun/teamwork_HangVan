@@ -1,0 +1,65 @@
+main {
+    > section {
+        row-gap: 4vh;
+        padding-top: 6vh;
+        padding-bottom: 6vh;
+
+        > section, > aside {
+            width: $contentRatioTab;
+        }
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+h3 {
+    font-size: $defaultH3Tab;
+}
+
+
+
+.event {
+
+    > article {
+        width: $contentRatioTab;
+
+        > a {
+            font-size: 17px;
+        }
+    }
+
+    > section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 4vh;
+
+        > a {
+            width: 47%;
+            transition: .4s;
+
+            &:hover {
+                box-shadow: 0 4px 25px 0 #c0c8b9;
+            }
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    aside {
+        min-height: 23vh;
+    }
+
+    address, small, label {
+        font-size: 16px;
+    }
+
+    img {
+        height: 20vh;
+    }
+
+}
