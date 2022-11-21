@@ -46,7 +46,7 @@ h3 {
     }
 
     aside {
-        padding: 4%;
+        padding: 5%;
         @include rowGap(1.5vh);
         color: $mediumGray;
         line-height: 1.3;
@@ -65,9 +65,21 @@ h3 {
         line-height: 1.4;
     }
 
+    address, small, label {
+        font-size: 15px;
+    }
+
     address {
         font-style: normal;
-        font-size: 16px;
+    }
+
+    form {
+        @include rowGap(0.5vh);
+    }
+
+    progress {
+        width: 100%;
+        accent-color: $mainColor;
     }
 
     figure {
