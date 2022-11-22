@@ -13,6 +13,21 @@ h3 {
 }
 
 
+nav {
+    width: 78%;
+    padding-left: 11%;
+    padding-right: 11%;
+
+    > article {
+        column-gap: 5vh;
+    }
+}
+
+h1 {
+    padding-left: 0;
+}
+
+
 .event {
 
     > article {
@@ -38,4 +53,40 @@ h3 {
         height: 22vh;
     }
 
+}
+
+.place {
+
+    > article {
+        width: $contentRatioDes;
+    }
+
+    > section {
+        width: $contentRatioDes;
+        column-gap: 2vh;
+        > article {
+            width: 30vh;
+            height: 30vh;
+
+            aside {
+                row-gap: 1vh;
+                strong {
+                    font-size: 24px;
+                }
+
+                a {
+                    font-size: 12px;
+                    transition: .2s;
+                }
+
+                a:hover {
+                    background-color: $mainColor;
+                    color: $whitegray;
+                    border: 2px solid transparent;
+                }
+            }
+            
+        }
+
+    }
 }
