@@ -11,22 +11,31 @@
     <title>teamwork_hangVan</title>
 </head>
 <body>
+
     <!-- NAV -->
     <nav>
         <h1><i class="fa-solid fa-ticket"></i>HangVan</h1>
         <article>
             <ul>
-                <li>
+                <li class="dropdown">
                     <a href="./index.html" class="dropbtn">HOME</a>
-                    <aside>
-                        <a href="#about">About</a>
-                        <a href="#event">Recent Event</a>
-                        <a href="#place">Place To Go</a>
+                    <aside class="dropdown-content">
+                        <a href="./index.html#about">About</a>
+                        <a href="./index.html#event">Recent Event</a>
+                        <a href="./index.html#place">Place To Go</a>
                         <a href="#contact">Contact</a>
                     </aside>
                 </li>
-                <li><a href="./event.html" class="dropbtn">EVENT</a></li>
-                <li><a href="./place.html" class="dropbtn">PLACE</a></li>
+                <li class="dropdown">
+                    <a href="./event.html" class="dropbtn">EVENT</a>
+                    <aside class="dropdown-content">
+                        <a href="./event.html#eFeature">Feature</a>
+                        
+                    </aside>
+                </li>
+                <li class="dropdown">
+                    <a href="./place.html" class="dropbtn">PLACE</a>
+                </li>
             </ul>
             <form>
                 <input type="search" placeholder="Search">
