@@ -45,13 +45,21 @@ details {
     display: flex;
     color: white;
 
+    summary {
+        font-size: 20px;
+    }
+
     > ul {
         position: absolute;
         width: 100%;
-        margin: 2.2vh;
+        margin-top: 1.7vh;
         text-align: left;
         background-color: white;
         box-shadow: 0 8px 16px 0 rgba($color: #c0c8b9, $alpha: 0.6);
+
+        > li {
+            border-bottom: 1px solid $lightgray;
+        }
     }
 
     li {
@@ -61,13 +69,16 @@ details {
 
     a {
         display: flex;
-        padding: 2%;
+        padding: 2.5%;
+        padding-left: 5%;
         color: $darkGray;
     } 
 }
 
 ul ul a {
-    padding-left: 4vh;
+    padding-left: 10%;
+    font-size: 15px;
+    color: $mediumGray;
 }
 
 h1 {

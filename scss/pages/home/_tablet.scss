@@ -48,7 +48,7 @@ nav {
     }
 
     > article {
-        @include columnGap(3vh);
+        @include columnGap(1vh);
         align-items: center;
 
         ul {

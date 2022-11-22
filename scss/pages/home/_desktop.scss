@@ -19,8 +19,12 @@ nav {
     padding-right: 11%;
 
     > article {
-        row-gap: 5vh;
+        column-gap: 5vh;
     }
+}
+
+h1 {
+    padding-left: 0;
 }
 
 
