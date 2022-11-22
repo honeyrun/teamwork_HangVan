@@ -61,6 +61,13 @@ h3 {
 
                 a {
                     font-size: 12px;
+                    transition: .2s;
+                }
+
+                a:hover {
+                    background-color: $mainColor;
+                    color: $whitegray;
+                    border: 2px solid transparent;
                 }
             }
             
