@@ -13,6 +13,17 @@ h3 {
 }
 
 
+nav {
+    width: 78%;
+    padding-left: 11%;
+    padding-right: 11%;
+
+    > article {
+        row-gap: 5vh;
+    }
+}
+
+
 .event {
 
     > article {
