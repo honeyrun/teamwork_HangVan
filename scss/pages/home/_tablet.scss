@@ -186,12 +186,13 @@ nav {
 
     > section {
         width: $contentRatioTab;
-        @include flexRow(8vh);
+        @include flexRow(4vh);
         justify-content: center;
+        row-gap: 4vh;
 
         > article {
-            width: 40vh;
-            height: 40vh;
+            width: 26vh;
+            height: 26vh;
 
             aside {
                 row-gap: 1vh;
