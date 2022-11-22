@@ -39,3 +39,27 @@ h3 {
     }
 
 }
+
+.place {
+
+    > section {
+        column-gap: 2vh;
+        > article {
+            width: 40vh;
+            height: 40vh;
+
+            aside {
+                row-gap: 2vh;
+                strong {
+                    font-size: 30px;
+                }
+
+                a {
+                    font-size: 14px;
+                }
+            }
+            
+        }
+
+    }
+}
