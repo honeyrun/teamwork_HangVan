@@ -73,3 +73,29 @@ h3 {
     }
 
 }
+
+.place {
+    width: 90%;    
+
+    > section {
+        @include flexRow(8vh);
+        justify-content: center;
+
+        > article {
+            width: 40vh;
+            height: 40vh;
+
+            aside {
+                row-gap: 1vh;
+                strong {
+                    font-size: 30px;
+                }
+                p {
+                    font-size:12px;
+                }
+            }
+        }       
+        
+    }
+    
+}
