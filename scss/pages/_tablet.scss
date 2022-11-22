@@ -70,13 +70,13 @@
                 text-decoration: none;
             }
     
-            a:hover, .dropdown:hover .dropbtn {
+            a:hover, .dropdown_custom:hover .dropbtn {
                 background-color: $subColor1;
             }
               
         }
     
-        li.dropdown {
+        li.dropdown_custom {
             display: inline-block;
     
             &:hover {
