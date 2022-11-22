@@ -46,6 +46,15 @@
             position: absolute;
             display: flex;
             color: white;
+
+            > ul {
+                position: absolute;
+                width: 100%;
+                margin-top: 1.7vh;
+                text-align: left;
+                background-color: white;
+                box-shadow: 0 8px 16px 0 rgba($color: #c0c8b9, $alpha: 0.6);
+            }
         }
 
         summary {
@@ -54,19 +63,6 @@
     }
     
     details {
-            
-        > ul {
-            position: absolute;
-            width: 100%;
-            margin-top: 1.7vh;
-            text-align: left;
-            background-color: white;
-            box-shadow: 0 8px 16px 0 rgba($color: #c0c8b9, $alpha: 0.6);
-    
-            > li {
-                border-bottom: 1px solid $lightgray;
-            }
-        }
     
         li {
             display: flex;
