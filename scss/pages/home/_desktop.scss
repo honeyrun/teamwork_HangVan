@@ -39,3 +39,32 @@ h3 {
     }
 
 }
+
+.place {
+
+    > article {
+        width: $contentRatioDes;
+    }
+
+    > section {
+        width: $contentRatioDes;
+        column-gap: 2vh;
+        > article {
+            width: 35vh;
+            height: 35vh;
+
+            aside {
+                row-gap: 2vh;
+                strong {
+                    font-size: 28px;
+                }
+
+                a {
+                    font-size: 14px;
+                }
+            }
+            
+        }
+
+    }
+}

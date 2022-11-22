@@ -73,3 +73,33 @@ h3 {
     }
 
 }
+
+.place {
+    > article {
+        width: $contentRatioTab;
+    }
+
+
+    > section {
+        width: $contentRatioTab;
+        @include flexRow(8vh);
+        justify-content: center;
+
+        > article {
+            width: 40vh;
+            height: 40vh;
+
+            aside {
+                row-gap: 1vh;
+                strong {
+                    font-size: 30px;
+                }
+                p {
+                    font-size:12px;
+                }
+            }
+        }       
+        
+    }
+    
+}

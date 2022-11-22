@@ -169,70 +169,104 @@ nav {
 }
 
 .place {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  > article {
+      width: $contentRatioMob;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > a {
+          @include columnGap(0.7vh);
+          align-items: center;
+          color: $mediumGray;
+      }
+
+      i {
+          font-size: 13px;
+      }
+  }
+  
+  > section {
       width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      row-gap: 8vh;
 
-    > article {
-        width: $contentRatioMob;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      > article { 
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 50vh;
+          height: 50vh;
+          border-radius: 50%;
+          background-image: url(/img/restaurant.jpg);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border: 8px solid $mainColor;
+        //   box-shadow: 5px 5px $lightgray;
 
-        > a {
-            @include columnGap(0.7vh);
-            align-items: center;
-            color: $mediumGray;
-        }
+          aside {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              background-color: rgba($color: #444, $alpha: 0.6);
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              row-gap: 2vh;
 
-        i {
-            font-size: 13px;
-        }
-    }
-    
-    > section {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 8vh;
+              
 
-        > article { 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 40vh;
-            height: 40vh;
-            border-radius: 50%;
-            background-image: url(/img/pexels-helena-lopes-696218.jpg);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+              strong {
+                  font-size: 38px;
+                  text-shadow: 4px 4px $darkGray;
+                  color: $whitegray;
+              }
 
-            aside {
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                background-color: rgba($color: #444, $alpha: 0.4);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+              p {
+                color: $subColor2;
+                font-size: 14px;
+                font-weight: 700;
+              }
 
-                strong, a {
-                    color: white;
-                }
+              small {
+                color: $whitegray;
+                text-align: center;
+                width: 80%;
+                line-height: 1.5;
+              }
 
-                strong {
-                    font-size: 30px;
-                }
+              a {
+                color: $subColor2;
+                font-weight: 700;
+                font-weight: 22px;
+                text-align: center;
+                border: 2px solid;
+                width: 20%;
+                padding: 1vh;
+              }
+          }
+      }
 
-            }
-        }
-    
-    }
+      article:nth-child(2) {
+        background-image: url(/img/activities.jpg);
+      } 
+      article:nth-child(3) {
+        background-image: url(/img/exhibition.jpg);
+      } 
+      article:nth-child(4) {
+        background-image: url(/img/theatre.jpg);
+      } 
+  
+  }
 }
