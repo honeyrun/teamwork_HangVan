@@ -13,6 +13,17 @@ h3 {
 }
 
 
+nav {
+    width: 78%;
+    padding-left: 11%;
+    padding-right: 11%;
+
+    > article {
+        row-gap: 5vh;
+    }
+}
+
+
 .event {
 
     > article {
@@ -50,17 +61,24 @@ h3 {
         width: $contentRatioDes;
         column-gap: 2vh;
         > article {
-            width: 35vh;
-            height: 35vh;
+            width: 30vh;
+            height: 30vh;
 
             aside {
-                row-gap: 2vh;
+                row-gap: 1vh;
                 strong {
-                    font-size: 28px;
+                    font-size: 24px;
                 }
 
                 a {
-                    font-size: 14px;
+                    font-size: 12px;
+                    transition: .2s;
+                }
+
+                a:hover {
+                    background-color: $mainColor;
+                    color: $whitegray;
+                    border: 2px solid transparent;
                 }
             }
             
