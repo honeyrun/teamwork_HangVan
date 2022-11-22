@@ -1,9 +1,10 @@
 
 //Removing bootstrap attribute for NAV
 
-nav {
+nav, details {
     box-sizing: content-box;
 }
+
 
 body {
     line-height: normal;
@@ -39,29 +40,119 @@ main {
 }
 
 
-
+// delete
 img {
-    width: 50vh;
-    height: 50vh;
+    width: 30vh;
 }
 
 
 .top3 {
 
+    padding-bottom: 0;
 
-    .carousol {
-        width: fit-content;
-    }
-    img {
-        width: 90vh;
-        height: 50vh;
+    > section {
+        width: 100%;
     }
 
     figcaption {
-        width: 100%;
-        height: 20%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 5% 13%;
+        position: absolute;
         color: white;
-        background-color: rgba($color: #000000, $alpha: 0.6);
+        background-image: linear-gradient(transparent 0%, rgba($color: #000000, $alpha: 0.7) 30%);
+        line-height: 1.5;
+        text-align: center;
+        
+        h2 {
+            font-size: 20px;
+            padding-bottom: 4vh;
+        }
+
+        h4, p {
+            display: none;
+        }
+
+        a {
+            color: $subColor2;
+            border: 2px solid $subColor2;
+            padding: 0.5vh;
+
+        }
+
     }
+
+}
+
+.eFeature {
+
+    background-color: $subColor1;
+
+    > article {
+
+        h3 {
+            font-weight: 600;
+        }
+
+        span {
+            background-color: $subColor2;
+            padding: 0.8vh;
+            border-radius: 5vh
+            
+        }
+    }
+
+    > section {
+        figure {
+            @include rowGap(3vh);
+        }
+    }
+
+    img {
+        width: 100%;
+        
+    }
+
+    > aside {
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 2vh;
+
+        a {
+            width: 100%;
+        }
+
+        figure {
+            height: 21vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+    }
+   
+
+    .pic1 figure {
+        background-image: url(/img/eGallery1.jpeg);
+    }
+    .pic2 figure {
+        background-image: url(/img/eGallery2.jpeg);
+    }
+    .pic3 figure {
+        background-image: url(/img/eGallery3.jpeg);
+    }
+    .pic4 figure {
+        background-image: url(/img/eGallery4.jpeg);
+    }
+    .pic5 figure {
+        background-image: url(/img/eGallery5.jpeg);
+    }
+    .pic6 figure {
+        background-image: url(/img/eGallery6.jpeg);
+    }
+    
+
 
 }

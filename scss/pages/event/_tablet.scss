@@ -1,0 +1,64 @@
+
+
+.top3 {
+
+    figcaption {
+
+        text-align: left;
+
+        h2 {
+            background-color: $mainColor;
+            width: fit-content;
+            padding: 1vh;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        h4, p {
+            display: block;
+        }
+
+        h4 {
+            padding-top: 2vh;
+            padding-bottom: 1vh;
+            font-size: 19px;
+        }
+
+        p {
+            min-height: 12vh;
+            color: lightgray;
+            padding-bottom: 2vh;
+        }
+
+        a {
+            color: $subColor2;
+            border: 2px solid $subColor2;
+            padding: 1vh;
+
+            &:hover {
+                background-color: $subColor2;
+                color: $darkGray;
+            }
+        }
+    }
+
+}
+
+.eFeature {
+
+    > aside {
+
+        justify-content: space-between;
+
+        
+        a {
+            width: 48%;
+        }
+
+        figure {
+            height: 16vh;
+        }
+
+    }
+
+}

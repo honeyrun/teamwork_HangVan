@@ -1,0 +1,64 @@
+
+.top3 {
+
+    > section {
+        width: 65%;
+    }
+
+    figcaption {
+        
+        h2 {
+            font-size: 32px;
+        }
+
+        h4 {
+            font-size: 21px;
+        }
+
+        p {
+            min-height: 14vh;
+        }
+
+        a {
+            padding: 1.5vh;
+        }
+
+    }
+
+}
+
+.eFeature {
+
+    > section {
+
+        figure {
+            flex-direction: row;
+        }
+    }
+
+
+    > aside {
+
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        column-gap: 1.5%;
+
+        a {
+            flex-grow: 1;
+            transition: 0.5s;
+            width: unset;
+
+            &:hover {
+                flex-grow: 5.5;
+            }
+        }
+
+        figure {
+            height: 50vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 900px;
+        }
+
+    }
+}
