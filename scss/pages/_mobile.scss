@@ -38,20 +38,23 @@
         > article {
             display: none;
         }
-    }
-    
-    details {
-        width: 95%;
-        padding-right: 5%;
-        text-align: right;
-        position: absolute;
-        display: flex;
-        color: white;
-    
+
+        > details {
+            width: 95%;
+            padding-right: 5%;
+            text-align: right;
+            position: absolute;
+            display: flex;
+            color: white;
+        }
+
         summary {
             font-size: 20px;
         }
+    }
     
+    details {
+            
         > ul {
             position: absolute;
             width: 100%;
