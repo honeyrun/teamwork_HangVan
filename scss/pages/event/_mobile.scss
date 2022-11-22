@@ -1,13 +1,67 @@
 
-* {
+//Removing bootstrap attribute for NAV
+
+nav {
     box-sizing: content-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+body {
+    line-height: normal;
+}
+
+h1, h2, h3, h4, h5, h6, address, p, figure {
     margin: 0;
+}
+
+input {
+    font-size: initial;
+    line-height: normal;
 }
 
 ul {
     padding: 0;
     margin: 0;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+//--------------------
+
+main {
+
+    > article {
+        @include alignColumn(center);
+        width: $contentRatioMob;
+    }
+}
+
+
+
+img {
+    width: 50vh;
+    height: 50vh;
+}
+
+
+.top3 {
+
+
+    .carousol {
+        width: fit-content;
+    }
+    img {
+        width: 90vh;
+        height: 50vh;
+    }
+
+    figcaption {
+        width: 100%;
+        height: 20%;
+        color: white;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+    }
+
 }
