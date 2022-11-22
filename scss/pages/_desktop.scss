@@ -1,5 +1,31 @@
 @media (min-width: 1000px) {
 
+    main {
+        > section {
+            row-gap: 5vh;
+    
+            > section, > aside {
+                width: $contentRatioDes;
+            }
+        }
+    }
+    
+    h3 {
+        font-size: $defaultH3Des;
+    }
+    
+    
+    nav {
+        width: 78%;
+        padding-left: 11%;
+        padding-right: 11%;
+    
+        > article {
+            column-gap: 5vh;
+        }
+    }
+    
+
     @import 'home/desktop';
     @import 'event/desktop';
     @import 'place/desktop';
