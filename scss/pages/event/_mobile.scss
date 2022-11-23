@@ -163,18 +163,21 @@ img {
     figure {
         display: flex;
         flex-direction: column;
-        line-height: 0;
 
         img {
             width: 100%;
         }
 
         figcaption {
-            border: 1px solid $lightgray;
-            display: block;
-            @include rowGap(1vh);
+
         }
 
+    }
 
+    aside {
+        padding: 5%;
+        border: 1px solid $lightgray;
+        border-top: 0px none transparent;
+        @include rowGap(1vh);
     }
 }
