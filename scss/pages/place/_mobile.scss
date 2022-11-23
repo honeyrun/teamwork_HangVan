@@ -181,8 +181,65 @@ main {
             }
         }
     }
-    // // activities
-    // .activities{}
+    // activities
+    .activities{
+        width: 100%;
+        background-color: rgba($color: $subColor2, $alpha: 0.4);
+        > section {
+            width: $contentRatioMob;
+            @include alignColumn(center);
+            > article {
+                width: 100%;
+                @include alignColumn(center);
+                row-gap: 2vh;
+                figure {
+                    width: 100%;
+                    height: 30vh;
+                    @include backImg;
+                    background-image: url(/img/activities_1.jpeg);
+                    figcaption {
+                        width: 100%;
+                        height: 100%;
+                        padding: 0 0 2vh 2vh;
+                        @include alignColumn(flex-start);
+                        justify-content: flex-end;
+                        row-gap: 1.5vh;
+                        background-color: rgba($color: #444, $alpha: 0.4);
+                        color: $whitegray;
+                        box-shadow: 3px 3px 4px $mediumGray;
+                        h5 {
+                            font-family: $defaultFont;
+                            font-weight: 700;
+                            font-size: 28px;
+                            letter-spacing: .5px;
+                            padding-bottom: 1vh;
+                            border-bottom: 1px solid;
+                        }
+                        p {
+                            font-weight: 600;
+                        }
+                        a {
+                            color: $whitegray;
+                            text-transform: uppercase;
+                            font-size: 10px;
+                            font-weight: 600;
+                            background-color: $mainColor;
+                            padding: 1vh;
+                        }
+                    }
+                }
+                figure:nth-child(2){
+                    background-image: url(/img/activities_2.jpg);
+                }
+                figure:nth-child(3){
+                    background-image: url(/img/activities_3.jpg);
+                }
+                figure:nth-child(4){
+                    background-image: url(/img/activities_4.jpeg);
+                }
+            }
+        }
+    }
     // exhibition
     .exhibition{
         > section {
@@ -237,7 +294,8 @@ main {
     }
     // theatre
     .theatre{
-    
+        width: 100%;
+        background-color: rgba($color: $subColor2, $alpha: 0.4);
         > section {
             @include alignColumn(center);
             > article {
