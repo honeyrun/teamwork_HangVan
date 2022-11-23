@@ -34,15 +34,10 @@ h1 {
 main {
 
     > article {
-        @include alignColumn(center);
         width: $contentRatioMob;
+        padding-top: 8vh;
+        padding-bottom: 8vh;
     }
-}
-
-
-// delete
-img {
-    width: 30vh;
 }
 
 
@@ -78,34 +73,42 @@ img {
             color: $subColor2;
             border: 2px solid $subColor2;
             padding: 0.5vh;
-
         }
-
     }
-
 }
 
 .eFeature {
 
-    background-color: $subColor1;
+    background-color: $darkGray;
+    color: white;
 
     > article {
 
         h3 {
             font-weight: 600;
+            border-bottom: 4px double $mainColor;
+            padding-bottom: 1vh;
         }
 
         span {
-            background-color: $subColor2;
-            padding: 0.8vh;
-            border-radius: 5vh
-            
+            color: $subColor2;
         }
     }
 
     > section {
         figure {
             @include rowGap(3vh);
+        }
+        figcaption {
+            padding: 4%;
+            @include rowGap(2vh);
+            h4 {
+                line-height: 1.5;
+            }
+            p {
+                color: #989898;
+                line-height: 1.4;
+            }
         }
     }
 
@@ -160,24 +163,133 @@ img {
 
 .eList {
 
+    @include rowGap(4vh);        
+
+    > section {
+        @include rowGap(2vh);        
+    }
+
     figure {
         display: flex;
         flex-direction: column;
-
-        img {
-            width: 100%;
-        }
-
-        figcaption {
-
-        }
-
     }
 
-    aside {
+    img {
+        width: 100%;
+    }
+
+    figcaption {
         padding: 5%;
         border: 1px solid $lightgray;
         border-top: 0px none transparent;
-        @include rowGap(1vh);
+        @include rowGap(2vh);
+
+        > h6 {
+            color: $mediumGray;
+        }
+    }
+
+    details {
+        line-height: 1.5;
+
+        h6 {
+            font-weight: 600;
+        }
+
+        p, h6, li {
+            padding-bottom: 1.4vh;
+        }
+
+        li {
+            color: $mediumGray;
+            font-style: italic;
+        }
+
+        iframe {
+            width: 100%;
+            height: 20vh;
+        }
+    }
+
+    details[open] {
+        > summary {
+            display: none;
+        }
+    }
+
+    summary {
+        list-style-type: none;
+        border: 1px solid $mainColor;
+        color: $mainColor;
+        text-align: center;
+        padding: 2%;
+    }
+
+    summary::marker {
+        display: none;
+    }
+
+    h5 {
+        font-size: 16px;
+        color: white;
+        background-color: $subColor1;
+        width: fit-content;
+        padding: 2%;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        font-weight: 600;
+    }
+
+   p {
+        font-size: 16px;
+        color: $mainColor;
+   }
+
+   aside {
+        display: flex;
+        justify-content: space-between;
+        color: $darkGray;
+
+        a {
+            display: flex;
+            align-items: center;
+            column-gap: 1vh;
+            color: $subColor1;
+        }
+    }
+}
+
+.eReference {
+    background-color: $subColor2;
+    color: $darkGray;
+
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    @include rowGap(3vh);
+
+    > section {
+        @include rowGap(2.2vh);
+
+        > article {
+            @include rowGap(2vh);
+        }
+    }
+
+    aside {
+        @include rowGap(2vh);
+    }
+
+    a {
+        color: $mainColor;
+        font-size: 13px;
+    }
+
+    h4 {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 16px;
     }
 }

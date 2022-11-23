@@ -1,4 +1,11 @@
+main {
 
+    > article {
+        width: $contentRatioTab;
+        display: flex;
+        column-gap: 6%;
+    }
+}
 
 .top3 {
 
@@ -41,16 +48,32 @@
             }
         }
     }
-
 }
 
 .eFeature {
+
+    > section {
+
+        figure {
+            flex-direction: row;
+            column-gap: 5%;
+        }
+
+        img {
+            width: 50%;
+            height: 20vh;
+            object-fit: cover;
+        }
+
+        figcaption {
+            padding: 0;
+        }
+    }
 
     > aside {
 
         justify-content: space-between;
 
-        
         a {
             width: 48%;
         }
@@ -58,7 +81,45 @@
         figure {
             height: 16vh;
         }
+    }
+}
 
+.filter {
+    width: 34%;
+}
+
+.eList {
+    width: 60%;
+    
+    details {
+
+        iframe {
+            height: 30vh;
+        }
+    }
+}
+
+.eReference {
+
+    width: 100%;
+
+    > section {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 4%;
+        row-gap: 2vh;
     }
 
+    article:nth-child(2){
+        padding-top: 3vh;
+    }
+
+    a:hover {
+        color: $subColor1;
+        text-decoration: underline;
+    }
+
+    aside {
+        row-gap: 1vh;
+    }
 }

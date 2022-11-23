@@ -1,9 +1,11 @@
+main {
+
+    > article {
+        width: $contentRatioDes;
+    }
+}
 
 .top3 {
-
-    > section {
-        width: 65%;
-    }
 
     figcaption {
         
@@ -12,36 +14,43 @@
         }
 
         h4 {
-            font-size: 21px;
+            padding-top: 4vh;
+            font-size: 23px;
         }
 
         p {
-            min-height: 14vh;
+            min-height: 16vh;
+            font-size: 16px;
         }
 
         a {
             padding: 1.5vh;
         }
-
     }
-
 }
 
 .eFeature {
 
-    > section {
+    row-gap: 7vh;
 
+    > section {
         figure {
             flex-direction: row;
         }
-    }
+        img {
+            height: 32vh;
+        }
 
+        p {
+            font-size: 16px;
+        }
+    }
 
     > aside {
 
         flex-wrap: nowrap;
         justify-content: space-between;
-        column-gap: 1.5%;
+        column-gap: 1.8%;
 
         a {
             flex-grow: 1;
@@ -59,6 +68,25 @@
             background-position: center;
             background-size: 900px;
         }
-
     }
+}
+
+.eList {
+
+    > section {
+        padding: 2%;
+    }
+
+    summary {
+        transition: .4s;
+        &:hover {
+            background-color: $mainColor;
+            color: white;
+        }
+    }
+
+    a:hover {
+        color: $mainColor;
+    }
+
 }
