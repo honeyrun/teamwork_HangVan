@@ -16,7 +16,7 @@
         font-size: $defaultH3Des;
     }
     
-    
+    // nav
     nav {
         width: 78%;
         padding-left: 11%;
@@ -27,6 +27,38 @@
         }
     }
     
+
+    // footer
+    footer {
+        font-size: 14px;
+
+        > section {
+            padding: 11%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            width: 78%;
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 7vh;
+        }
+
+        aside, form {
+            row-gap: 1.5vh;
+        }
+
+        aside, form {
+            min-width: 23vh;
+        }
+
+        ul {
+            flex-direction: column;
+        }
+
+        article:last-child ul {
+            flex-direction: row;
+        }
+
+    }
 
     @import 'home/desktop';
     @import 'event/desktop';
