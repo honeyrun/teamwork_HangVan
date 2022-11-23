@@ -184,8 +184,9 @@ main {
     // exhibition
     .exhibition{
         > section {
-            width: $contentRatioMob;
+            @include alignColumn(center);
             >section {
+                width: $contentRatioMob;
                 @include alignColumn (center);
                 row-gap: 1vh;
                 figure {border: 1px solid$mainColor;
@@ -236,7 +237,7 @@ main {
     .theatre{
     
         > section {
-            width: 90%;
+            @include alignColumn(center);
             > article {
                 margin: 0;
                 display: none;
