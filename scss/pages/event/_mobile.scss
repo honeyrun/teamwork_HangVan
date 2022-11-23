@@ -29,6 +29,12 @@ h1 {
     font-weight: 600;
 }
 
+footer {
+    > section {
+        box-sizing: content-box;
+    }
+}
+
 //--------------------
 
 main {
