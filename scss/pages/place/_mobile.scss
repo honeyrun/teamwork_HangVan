@@ -35,9 +35,10 @@ main {
     // restaurant
     .restaurant{
         > section {
+            width: $contentRatioMob;
             @include alignColumn(center);
             > section {
-                width: $contentRatioMob;
+                width: 100%;
                 @include alignColumn(center);
                 row-gap: 4vh;
                 article {
@@ -243,9 +244,10 @@ main {
     // exhibition
     .exhibition{
         > section {
+            width: $contentRatioMob;
             @include alignColumn(center);
             >section {
-                width: $contentRatioMob;
+                width: 100%;
                 @include alignColumn (center);
                 row-gap: 1vh;
                 figure {border: 1px solid$mainColor;
@@ -297,13 +299,13 @@ main {
         width: 100%;
         background-color: rgba($color: $subColor2, $alpha: 0.4);
         > section {
+            width: $contentRatioMob;
             @include alignColumn(center);
             > article {
                 margin: 0;
                 display: none;
             }
             > section {
-                width: $contentRatioMob;
                 >aside{
                     width: 100%;
                     img{
@@ -322,18 +324,15 @@ main {
                         background-color: rgba($color: #000000, $alpha: 0.5);
                         h5{
                             font-size: 18px;
-                            margin: 0;
                         }
                         small{
                             font-size: 8px;
                         }
                         p{
                             font-size: 12px;
-                            margin: 0;
                         }
                         address{
                            display: none;
-                            // margin: 0;
                         }
                     }
                 }

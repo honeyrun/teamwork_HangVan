@@ -1,16 +1,105 @@
 main {
+    > section {
+        width: 100%;
+    }
     //restaurant 
     .restaurant {
-        > section {
-            
+        a {
+            transition: .3s;
+        }
+
+        a:hover {
+            background-color: $subColor1;
+            border: 1px solid;
         }
     }
-    //activities
-    // .activities {}
-    // // exhibition
-    // .exhibition {}
-    // // theatre
-    // .theatre {}
-    // // reference
-    // .reference {}
+    // activities
+    .activities {
+        > section {
+            width: $contentRatioDes;
+            > article {
+                width: 100%;
+                figure {
+                    width: 100%;
+                    > figcaption{
+                        row-gap: 1vh;
+                        small {
+                            font-size: 18px;
+                        }
+                        h5 {
+                            font-size: 40px;
+                        }
+                        p {
+                            font-size: 22px;
+                            padding-bottom: 1.5vh;
+                        }
+                        a{
+                            font-size: 18px;
+                            transition: .3s;
+                        }
+                        a:hover {
+                            background-color: $whitegray;
+                            color: $mainColor;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    // exhibition
+    .exhibition {
+        > section {
+            width: $contentRatioDes;
+            > section {
+                width: 100%;
+                figure {
+                    width: 48%;
+                }
+                a {
+                    transition: .3s;
+                }
+                a:hover {
+                    background-color: $mainColor;
+                    color: $whitegray;
+                }
+            }
+        }
+    }
+    // theatre
+    .theatre {
+        > section {
+            width: $contentRatioDes;
+
+            > article {
+                display: flex;
+                padding-bottom: 1vh;
+            }
+            > section {
+                >aside{
+                    section{
+                        h5{
+                            font-size: 30px;
+                            padding-bottom: .5vh;
+                            border-bottom: 1px solid;
+                        }
+                        small {
+                            padding-top: .5vh;
+                        }
+                        address{
+                            display: block;
+                            font-size: 8px;
+                            padding-bottom: 2vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // reference
+    .reference {
+        > section {
+            width: $contentRatioDes;
+        }
+    }
 }

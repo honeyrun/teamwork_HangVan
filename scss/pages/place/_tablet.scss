@@ -1,12 +1,17 @@
 main {
+    > section {
+        width: 100%;
+    }
     //restaurant 
     .restaurant {
         > section {
+            width: $contentRatioTab;
             > section {
-                width: $contentRatioTab;
+                width: 100%;
                 @include flexRow(2vh);
+                justify-content: space-between;
             article {
-                width: 46%;
+                width: 48%;
             }
         }
         }
@@ -14,12 +19,13 @@ main {
     // activities
     .activities {
         > section {
+            width: $contentRatioTab;
             > article {
-                width: $contentRatioTab;
+                width: 100%;
                 @include flexRow(2vh);
+                justify-content: space-between;
                 figure {
-                    width: 46%;
-
+                    width: 48%;
                 }
             }
         }
@@ -27,17 +33,51 @@ main {
     // exhibition
     .exhibition {
         > section {
+            width: $contentRatioTab;
             > section {
-                width: $contentRatioTab;
+                width: 100%;
                 @include flexRow(2vh);
-            figure {
-                width: 46%;
+                align-items: flex-start;
+                justify-content: space-between;
+                figure {
+                    width: 48%;
+                    }
+            }
+        }
+    }
+    // theatre
+    .theatre {
+        > section {
+            width: $contentRatioTab;
+
+            > article {
+                display: flex;
+            }
+            > section {
+                >aside{
+                    section{
+                        h5{
+                            font-size: 26px;
+                            padding-bottom: .5vh;
+                            border-bottom: 1px solid;
+                        }
+                        small {
+                            padding-top: .5vh;
+                        }
+                        address{
+                            display: block;
+                            font-size: 8px;
+                            padding-bottom: 2vh;
+                        }
+                    }
                 }
             }
         }
     }
-    // // theatre
-    // .theatre {}
-    // // reference
-    // .reference {}
+    // reference
+    .reference {
+        > section {
+            width: $contentRatioTab;
+        }
+    }
 }
