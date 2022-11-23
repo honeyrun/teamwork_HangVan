@@ -1,0 +1,43 @@
+main {
+    //restaurant 
+    .restaurant {
+        > section {
+            > section {
+                width: $contentRatioTab;
+                @include flexRow(2vh);
+            article {
+                width: 46%;
+            }
+        }
+        }
+    }
+    // activities
+    .activities {
+        > section {
+            > article {
+                width: $contentRatioTab;
+                @include flexRow(2vh);
+                figure {
+                    width: 46%;
+
+                }
+            }
+        }
+    }
+    // exhibition
+    .exhibition {
+        > section {
+            > section {
+                width: $contentRatioTab;
+                @include flexRow(2vh);
+            figure {
+                width: 46%;
+                }
+            }
+        }
+    }
+    // // theatre
+    // .theatre {}
+    // // reference
+    // .reference {}
+}
