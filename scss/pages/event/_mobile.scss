@@ -133,7 +133,6 @@ img {
 
     }
    
-
     .pic1 figure {
         background-image: url(/img/eGallery1.jpeg);
     }
@@ -153,6 +152,29 @@ img {
         background-image: url(/img/eGallery6.jpeg);
     }
     
+}
+
+.filter {
+    display: none;
+}
+
+.eList {
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        line-height: 0;
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            border: 1px solid $lightgray;
+            display: block;
+            @include rowGap(1vh);
+        }
 
 
+    }
 }
