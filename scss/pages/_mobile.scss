@@ -96,17 +96,19 @@
 
  // header
  header {
+    padding-top: 6vh;
+    height: 28vh;
+    display: flex;
+
     video {
-        padding-top: 6vh;
+        height: 100%;
         width: 100%;
         position: relative;
         object-position: center;
         object-fit: cover;
-        height: 28vh;
     }
     > article {
         position: absolute;
-        top: 6vh;
         width: 100%;
         height: 28vh;
         background-color: rgba($color: #444, $alpha: 0.5);
