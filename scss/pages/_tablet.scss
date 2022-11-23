@@ -133,7 +133,58 @@
             padding-left: 0;
         }
     }
-    
+
+
+
+    // footer
+    footer {
+
+        > section {
+            padding: 7%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            width: 86%;
+
+            >  article {
+                flex-direction: row;
+                column-gap: 4vh;
+            }
+        }
+
+        > section:last-child aside {
+            width: 100%;
+        }
+
+       aside {
+        row-gap: 0.7vh;
+       }
+
+        aside:nth-child(3) ul {
+            flex-direction: row;
+        }
+
+        input {
+            padding: 1%;
+        }
+
+        .fa-brands {
+            width: 2.5vh;
+            height: 2.5vh;
+
+            &:hover {
+                background-color: $subColor1;
+                border-color: $subColor1;
+                color: #444;
+            }
+        }
+
+        a:hover {
+            color: $subColor1;
+            text-decoration: underline;
+        }
+    }
+
+
     @import 'home/tablet';
     @import 'event/tablet';
     @import 'place/tablet';
