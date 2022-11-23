@@ -1,87 +1,5 @@
-main {
-    > section {
-        row-gap: 6vh;
-        padding-top: 8vh;
-        padding-bottom: 8vh;
 
-        > section, > aside {
-            width: $contentRatioMob;
-            @include alignColumn;
-        }
-    }
-
-    p {
-        font-size: 14px;
-    }
-}
-
-h3 {
-    font-size: $defaultH3Mob;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-nav {
-    width: 100%;
-    position: fixed;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $mainColor;
-    padding-top: 3%;
-    padding-bottom: 3%;
-
-    > article {
-        display: none;
-    }
-}
-
-details {
-    width: 95%;
-    padding-right: 5%;
-    text-align: right;
-    position: absolute;
-    display: flex;
-    color: white;
-
-    > ul {
-        position: absolute;
-        width: 100%;
-        margin: 2.2vh;
-        text-align: left;
-        background-color: white;
-        box-shadow: 0 8px 16px 0 rgba($color: #c0c8b9, $alpha: 0.6);
-    }
-
-    li {
-        display: flex;
-        flex-direction: column;
-    }
-
-    a {
-        display: flex;
-        padding: 2%;
-        color: $darkGray;
-    } 
-}
-
-ul ul a {
-    padding-left: 4vh;
-}
-
-h1 {
-    color: white;
-    @include columnGap(1vh);
-    align-items: center;
-    padding-left: 5%;
-
-    i {
-        color: $subColor2;
-    }
-}
-
-
+// EVENT
 .event {
 
     > article {
@@ -176,9 +94,9 @@ h1 {
         height: 25vh;
         object-fit: cover;
     }
-
 }
 
+// PLACE
 .place {
     width: 100%;
     display: flex;
@@ -215,8 +133,8 @@ h1 {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          width: 50vh;
-          height: 50vh;
+          width: 40vh;
+          height: 40vh;
           border-radius: 50%;
           background-image: url(/img/restaurant.jpg);
           background-position: center;

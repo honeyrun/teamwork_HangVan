@@ -1,5 +1,139 @@
 @media (min-width: 600px) {
 
+    main {
+        > section {
+            row-gap: 4vh;
+            padding-top: 6vh;
+            padding-bottom: 6vh;
+    
+            > section, > aside {
+                width: $contentRatioTab;
+            }
+        }
+    
+        p {
+            font-size: 14px;
+        }
+    
+        a:hover {
+            transition: .4s;
+    
+        }
+    }
+    
+    h3 {
+        font-size: $defaultH3Tab;
+    }
+    
+    body {
+        position: relative;
+    }
+    
+    // NAV
+    nav {
+    
+        width: 86%;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 7%;
+        padding-right: 7%;
+        position: fixed;
+        background-color: $mainColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+    
+    
+        details {
+            display: none;
+        }
+    
+        > article {
+            @include columnGap(1vh);
+            align-items: center;
+    
+            ul {
+                list-style-type: none;
+                overflow: hidden;
+            }
+    
+            li {
+                float: left;
+            }
+    
+            a, .dropbtn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 2vh;
+                text-decoration: none;
+            }
+    
+            a:hover, .dropdown_custom:hover .dropbtn {
+                background-color: $subColor1;
+            }
+              
+        }
+    
+        li.dropdown_custom {
+            display: inline-block;
+    
+            &:hover {
+                .dropdown-content {
+                    display: block;
+                }
+            }
+        }
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 2vh;
+            box-shadow: 0 8px 16px 0 #c0c8b9;
+    
+            a {
+                color: black;
+                padding: 2vh;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+    
+                &:hover {
+                    background-color: $lightgray;
+                }
+            }
+        }
+    
+        form {
+            width: fit-content;
+            @include columnGap(1vh);
+        }
+    
+        input {
+            box-sizing: border-box;
+            padding: 3%;
+            border: 0px none transparent;
+            border-radius: 0.3vh;
+        }
+    
+        [type="search"] {
+            width: 60%;
+        }
+    
+        [type="submit"] {
+            background-color: $subColor1;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        h1 {
+            padding-left: 0;
+        }
+    }
+    
     @import 'home/tablet';
     @import 'event/tablet';
     @import 'place/tablet';
