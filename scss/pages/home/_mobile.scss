@@ -196,3 +196,103 @@
       } 
   }
 }
+
+// contact
+.contact {
+    width:100%;
+    @include alignColumn(center);
+    background-color: $whitegray;
+    > aside {
+        width: $contentRatioMob;
+        h3 {
+            padding-left: 5%;
+            color: $mainColor;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+    > section {
+        width: $contentRatioMob;
+        @include alignColumn(flex-start);
+        row-gap: 3vh;
+        
+        article {
+            width: 100%;
+            @include alignColumn(flex-start);
+            row-gap: 1vh;
+        }
+    }
+    
+    input, textarea {
+        width: 96%;
+        padding: 2vh 0;
+        padding-left: 4%;
+        border: transparent;
+        border-bottom: 2px solid $mainColor;
+        background-color: transparent;
+    }
+    textarea {
+        border: 2px solid $mainColor;
+        height: 20vh;
+    }
+    
+    input::placeholder,
+    textarea::placeholder {
+        color: $mainColor;
+        font-size: 18px;
+    }
+
+    aside {
+        width: 100%;
+        [type="submit"] {
+            color: $subColor1;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 700;
+            border: 2px solid;
+            border-radius: 5px;
+            width: 100%;
+        }
+    }
+    > article {
+        width: $contentRatioMob;
+        @include alignColumn(center);
+        row-gap: 4vh;
+        h4 {
+            color: $darkGray;
+            text-transform: capitalize;
+            font-size: 24px;
+        }
+        span {
+            color: $mainColor;
+            text-decoration: underline;
+        }
+        p {
+            line-height: 1.5;
+            text-align: center;
+            color: $mediumGray;
+            font-size: 16px;
+        }
+        aside {
+            @include columnGap (2vh);
+            justify-content: center;
+        }
+        a{
+            color: $subColor1;
+            font-size: 26px;
+        }
+        ul {
+            @include alignColumn(flex-start);
+            row-gap: 2vh;
+        }
+        li{
+            @include columnGap(2vh);
+            list-style-type:none;
+            color: $darkGray;
+            font-size: 18px;
+            i{
+                color: $mainColor;
+            }
+        }
+    }
+  }
