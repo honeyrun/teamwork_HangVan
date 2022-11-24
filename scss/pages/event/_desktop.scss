@@ -104,6 +104,10 @@ main {
         }
     }
 
+    img {
+        height: 32vh;
+    }
+
     a:hover {
         color: $mainColor;
     }
@@ -114,4 +118,20 @@ main {
         }
     }
 
+}
+
+.eArticle {
+    > section {
+        > article {
+            height: 37vh;
+        }
+    }
+
+    aside {
+        row-gap: 3vh;
+    }
+
+    a {
+        padding: 1%;
+    }
 }
