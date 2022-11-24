@@ -8,6 +8,10 @@
         > article {
             @include alignColumn(center);
             row-gap: 2vh;
+            background-color: white;
+            padding: 12% 5%;
+            border-radius: 1vh;
+            box-shadow: 0 4px 25px 0 #c0c8b9;
         }
 
         figure {
@@ -21,19 +25,27 @@
 
         figcaption {
             color: $mainColor;
-            font-size: 36px;
+            font-size: 38px;
         }
     }
 
     aside {
         @include rowGap(2vh);
+        align-items: center;
         text-align: center;
         line-height: 1.5;
     }
 
     h4 {
+        width: 88%;
         color: $subColor1;
         font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: $darkGray;
+        font-size: 15px;
     }
 }
 
@@ -90,7 +102,7 @@
         font-style: normal;
     }
 
-    form {
+    .progress {
         @include rowGap(0.5vh);
     }
 
@@ -235,3 +247,103 @@
       } 
   }
 }
+
+// contact
+.contact {
+    width:100%;
+    @include alignColumn(center);
+    background-color: $whitegray;
+    > aside {
+        width: $contentRatioMob;
+        h3 {
+            padding-left: 5%;
+            color: $mainColor;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+    > section {
+        width: $contentRatioMob;
+        @include alignColumn(flex-start);
+        row-gap: 3vh;
+        
+        article {
+            width: 100%;
+            @include alignColumn(flex-start);
+            row-gap: 3vh;
+        }
+    }
+    
+    input, textarea {
+        width: 96%;
+        padding: 1vh 0;
+        padding-left: 4%;
+        border: transparent;
+        border-bottom: 2px solid $mainColor;
+        background-color: transparent;
+    }
+    textarea {
+        border: 2px solid $mainColor;
+        height: 20vh;
+    }
+    
+    input::placeholder,
+    textarea::placeholder {
+        color: $mainColor;
+        font-size: 18px;
+    }
+
+    aside {
+        width: 100%;
+        [type="submit"] {
+            color: $subColor1;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 700;
+            border: 2px solid;
+            border-radius: 5px;
+            width: 100%;
+        }
+    }
+    > article {
+        width: $contentRatioMob;
+        @include alignColumn(center);
+        row-gap: 4vh;
+        h4 {
+            color: $darkGray;
+            text-transform: capitalize;
+            font-size: 24px;
+        }
+        span {
+            color: $mainColor;
+            text-decoration: underline;
+        }
+        p {
+            line-height: 1.5;
+            text-align: center;
+            color: $mediumGray;
+            font-size: 16px;
+        }
+        aside {
+            @include columnGap (2vh);
+            justify-content: center;
+        }
+        a{
+            color: $subColor1;
+            font-size: 26px;
+        }
+        ul {
+            @include alignColumn(flex-start);
+            row-gap: 2vh;
+        }
+        li{
+            @include columnGap(2vh);
+            list-style-type:none;
+            color: $darkGray;
+            font-size: 18px;
+            i{
+                color: $mainColor;
+            }
+        }
+    }
+  }

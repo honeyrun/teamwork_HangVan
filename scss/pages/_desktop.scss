@@ -40,14 +40,14 @@
             flex-direction: row;
             justify-content: space-between;
             column-gap: 7vh;
+
+            > article {
+                column-gap: 8vh;
+            }
         }
 
         aside, form {
             row-gap: 1.5vh;
-        }
-
-        aside, form {
-            min-width: 23vh;
         }
 
         ul {
@@ -56,6 +56,11 @@
 
         article:last-child ul {
             flex-direction: row;
+        }
+
+        .fa-brands {
+            width: 3.5vh;
+            height: 3.5vh;
         }
 
     }
