@@ -1,4 +1,43 @@
 
+// ABOUT
+.about {
+    background-color: rgba($color: $subColor2, $alpha: 0.3);
+    > section {
+        row-gap: 4vh;
+
+        > article {
+            @include alignColumn(center);
+            row-gap: 2vh;
+        }
+
+        figure {
+            border: 2px solid $mainColor;
+            width: 12vh;
+            height: 12vh;
+            border-radius: 50%;
+            @include alignColumn(center);
+            justify-content: center;
+        }
+
+        figcaption {
+            color: $mainColor;
+            font-size: 36px;
+        }
+    }
+
+    aside {
+        @include rowGap(2vh);
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    h4 {
+        color: $subColor1;
+        font-size: 20px;
+    }
+}
+
+
 // EVENT
 .event {
 
