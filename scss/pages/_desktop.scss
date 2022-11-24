@@ -26,6 +26,26 @@
             column-gap: 5vh;
         }
     }
+
+    header {
+        height: 40vh;
+
+        > article {
+            height: 40vh;
+        }
+
+        aside {
+            a {
+                transition: .3s;
+            }
+
+            a:hover {
+                background-color: $subColor1;
+                border: 1px solid $subColor1;
+            }
+        }
+    }
+
     
 
     // footer

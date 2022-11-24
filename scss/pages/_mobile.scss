@@ -123,29 +123,29 @@
             justify-content: center;
             row-gap: 1.5vh;
             color: $whitegray;
-            h2 {
-                font-size: 20px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        strong {
+            font-weight: 400;
+            font-size: 10px;
+            span {
+                font-size: 14px;
+                font-weight: 700;
+                color: $subColor1;
+                text-shadow: 1.5px 1.5px $darkGray;
             }
-            strong {
-                font-weight: 400;
-                font-size: 10px;
-                span {
-                    font-size: 14px;
-                    font-weight: 700;
-                    color: $subColor1;
-                    text-shadow: 1.5px 1.5px $darkGray;
-                }
-            }
-            p {
-                display: none;
-            }
-            a {
-                padding: .5vh;
-                font-size: 8px;
-                color: $whitegray;
-                border: 1px solid $whitegray;
-                border-radius: 5px;
-            }
+        }
+        p {
+            display: none;
+        }
+        a {
+            padding: .5vh;
+            font-size: 8px;
+            color: $whitegray;
+            border: 1px solid $whitegray;
+            border-radius: 5px;
         }
     }
 }

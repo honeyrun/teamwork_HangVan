@@ -86,3 +86,55 @@
 
     }
 }
+
+.contact {
+    @include flexRow(4%);
+    align-items: flex-start;
+    justify-content: center;
+    
+    > aside {
+        width: $contentRatioDes;
+    }
+
+    > section {
+        width: 37%;
+
+        input:nth-child(1),
+        input:nth-child(2) {
+            width: 100%;
+        }
+
+        textarea {
+            width: 96%;
+        }
+
+        aside {
+            width: 100%;
+        }
+        
+        [type="submit"] {
+            padding: 1vh 0;
+            transition: .3s;
+        }
+
+        [type="submit"]:hover {
+            background-color: $subColor1;
+            color: $whitegray;
+        }
+
+    }
+
+    > article {
+        width: 37%;
+        padding-top: 0;
+        row-gap: 6vh;
+
+        a{
+            transition: .3s;
+        }
+
+        a:hover {
+            color: $mainColor;
+        }
+    }
+}
