@@ -11,9 +11,9 @@ main {
                 width: 100%;
                 @include flexRow(2vh);
                 justify-content: space-between;
-            article {
-                width: 48%;
-            }
+        }
+        article {
+            width: 48%;
         }
         }
     }
@@ -25,10 +25,10 @@ main {
                 width: 100%;
                 @include flexRow(2vh);
                 justify-content: space-between;
-                figure {
-                    width: 48%;
-                }
             }
+        }
+        figure {
+            width: 48%;
         }
     }
     // exhibition
@@ -40,10 +40,10 @@ main {
                 @include flexRow(2vh);
                 align-items: flex-start;
                 justify-content: space-between;
-                figure {
-                    width: 48%;
-                    }
             }
+            figure {
+                width: 48%;
+                }
         }
     }
     // theatre
