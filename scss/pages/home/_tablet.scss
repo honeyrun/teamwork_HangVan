@@ -1,4 +1,36 @@
 
+.about {
+    > section {
+
+        > article {
+            flex-direction: row;
+            column-gap: 3vh;
+            padding: 4% 5.5%;
+            transition: .4s;
+
+            &:hover {
+                background-color: rgba($color: $subColor1, $alpha: 0.3);
+            }
+        }
+
+        figcaption {
+            font-size: 42px;
+        }
+    }
+
+    aside {
+        width: 80%;
+        text-align: left;
+        row-gap: 1vh;
+        align-items: flex-start;
+    }
+
+    h4 {
+        width: unset;
+        text-align: left;
+    }
+}
+
 .event {
 
     > article {

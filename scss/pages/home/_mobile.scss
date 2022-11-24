@@ -8,6 +8,10 @@
         > article {
             @include alignColumn(center);
             row-gap: 2vh;
+            background-color: white;
+            padding: 12% 5%;
+            border-radius: 1vh;
+            box-shadow: 0 4px 25px 0 #c0c8b9;
         }
 
         figure {
@@ -21,19 +25,27 @@
 
         figcaption {
             color: $mainColor;
-            font-size: 36px;
+            font-size: 38px;
         }
     }
 
     aside {
         @include rowGap(2vh);
+        align-items: center;
         text-align: center;
         line-height: 1.5;
     }
 
     h4 {
+        width: 88%;
         color: $subColor1;
         font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: $darkGray;
+        font-size: 15px;
     }
 }
 
@@ -90,7 +102,7 @@
         font-style: normal;
     }
 
-    form {
+    .progress {
         @include rowGap(0.5vh);
     }
 

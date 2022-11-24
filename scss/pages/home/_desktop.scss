@@ -1,4 +1,28 @@
 
+.about {
+    > section {
+        > article {
+            flex-direction: row;
+            column-gap: 5vh;
+        }
+
+        figcaption {
+            font-size: 42px;
+        }
+    }
+
+    aside {
+        width: 80%;
+        text-align: left;
+        row-gap: 1vh;
+        align-items: flex-start;
+    }
+
+    h4 {
+        width: unset;
+        text-align: left;
+    }
+}
 
 .event {
 
