@@ -38,6 +38,60 @@ footer {
 
 //--------------------
 
+// header 
+header {
+    height: 45vh;
+    @include backImg;
+    background-image: url(/img/header_y.jpg);
+    
+
+    article {
+        position: unset;
+        @include alignColumn(center);
+        justify-content:center;
+        row-gap: 2vh;
+        height: 100%;
+        padding-top: 6vh;
+        background-color: rgba($color: #444, $alpha: 0.3);
+        text-align: center;
+    }
+    h2 {
+        color: $subColor2;
+        font-weight: 700;
+    }
+    p {
+        font-size: 14px;
+        width: $contentRatioMob;
+        color: $whitegray;
+
+    }
+    form {
+        width: 70%;
+        @include columnGap(0);
+        input{
+            border:none;
+            padding: .5vh 1vh;
+            background-color: $whitegray;
+        }
+
+        input::placeholder{
+            font-size: 12px;
+        }
+
+        [type="search"] {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        [type="submit"] {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    }
+
+}
+
 main {
     > section{
         width: 95%;

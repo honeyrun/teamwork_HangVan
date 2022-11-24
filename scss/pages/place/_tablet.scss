@@ -1,8 +1,26 @@
+// header
+header {
+    height: 40vh;
+    article {
+        padding-top: 6vh;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 18px;
+        width: 50%;
+    }
+
+}
+
+// main
 main {
     > section {
         width: 100%;
     }
 }
+
     //restaurant 
     .restaurant {
         > section {
