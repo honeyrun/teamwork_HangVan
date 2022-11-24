@@ -76,5 +76,51 @@
         }       
         
     }
-    
+}
+
+.contact {
+    > aside {
+        width: $contentRatioTab;
+        h3 {
+            padding: 0;
+        }
+    }
+    > section {
+        width: $contentRatioTab;
+        > article {
+            @include flexRow(1vh);
+            justify-content: space-between;
+        }
+        input,textarea {
+            padding-left: 1vh;
+            width: 100%;
+        }
+
+        input::placeholder,
+        textarea::placeholder{
+            font-size: 20px;
+        }
+
+        input:nth-child(1),
+        input:nth-child(2) {
+            width: 46%;
+        }
+
+        aside {
+            width: 70%;
+        }
+
+    }
+
+    > article {
+        width: $contentRatioTab;
+        padding-top: 4vh;
+
+        h4 {
+            font-size: 28px;
+        }
+        ul {
+            width: 100%;
+        }
+    }
 }

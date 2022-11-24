@@ -258,13 +258,13 @@
         article {
             width: 100%;
             @include alignColumn(flex-start);
-            row-gap: 1vh;
+            row-gap: 3vh;
         }
     }
     
     input, textarea {
         width: 96%;
-        padding: 2vh 0;
+        padding: 1vh 0;
         padding-left: 4%;
         border: transparent;
         border-bottom: 2px solid $mainColor;
