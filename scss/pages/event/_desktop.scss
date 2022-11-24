@@ -94,6 +94,7 @@ main {
 
 .eList {
     
+    padding-bottom: 3vh;
     row-gap: 6vh;
 
     summary {
@@ -133,5 +134,16 @@ main {
 
     a {
         padding: 1%;
+    }
+}
+
+.eRegister {
+
+    > section {
+        width: 60%;
+    }
+
+    input, textarea, select {
+        padding: 1.4%;
     }
 }

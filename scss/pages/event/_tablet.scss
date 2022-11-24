@@ -169,6 +169,31 @@ main {
     }
 }
 
+.eRegister {
+
+    aside {
+        flex-direction: row;
+        column-gap: 2vh;
+    }
+
+    input {
+        flex: 1;
+    }
+
+    .submit {
+
+        input:hover {
+            transition: .4s;
+
+            &:hover {
+                background-color: $mainColor;
+                color: $subColor2;
+            }
+        }
+    }
+
+}
+
 .eReference {
 
     width: 100%;

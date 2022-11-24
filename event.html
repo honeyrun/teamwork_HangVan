@@ -382,7 +382,6 @@
                     </aside>
                 </article>
             </section>
-
         </section>
         <!-- REGISTER -->
         <section class="eRegister" id="eRegister">
@@ -393,7 +392,47 @@
                 </p>
             </article>
             <section>
-
+                <form method="post">
+                    <article>
+                        <p>Organizer Info</p>
+                        <aside>
+                            <input type="text" name="Name" placeholder="Organiztion Name">
+                            <input type="tel" name="phone" placeholder="Phone Number">
+                            <input type="email" name="email" placeholder="Email Address">
+                        </aside>
+                    </article>
+                    <article>
+                        <p>Event Category</p>
+                        <select name="title" id="title">
+                            <option value="" disabled selected>Please select the category</option>
+                            <option value="Festivals">Festivals</option>
+                            <option value="Arts">Arts</option>
+                            <option value="Charity">Charity</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Workshop">Workshop</option>
+                            <option value="Entertainment">Entertainment</option>
+                            <option value="Holiday">Holiday Event</option>
+                            <option value="Performance">Performance</option>
+                        </select>
+                        <p>Event Date & Time</p>
+                        <aside>
+                            <input type="date">
+                            <input type="time">
+                        </aside>
+                    </article>
+                    <article>
+                        <p>Location</p>
+                        <aside>
+                            <input type="text" name="First Address" placeholder="Address1">
+                            <input type="text" name="Second Address" placeholder="Address2">
+                        </aside>
+                    </article>
+                    <textarea name="details" placeholder="Event Details"></textarea>
+                    <aside class="submit">
+                        <input type="reset">
+                        <input type="submit" value="Register">
+                    </aside>
+                </form>
             </section>
         </section>
         <!-- REGISTER END -->

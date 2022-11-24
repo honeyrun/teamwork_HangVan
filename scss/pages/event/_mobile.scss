@@ -389,16 +389,78 @@ main {
     .article2 {
         background-image: url(/img/article2.jpg);
     }
-
 }
 
 .eRegister {
-    background-color: $subColor2;
+    background-color: rgba($color: $subColor2, $alpha: 0.3);
+    width: 100%;
+
+    > article {
+        text-align: center;
+        width: 80%;
+        row-gap: 2.5vh;
+
+        h3 {
+            font-size: 30px;
+        }
+
+        p {
+            color: $darkGray;
+            font-size: 16px;
+            justify-content: center;
+        }
+    }
+
+    form {
+        width: 100%;
+        border: 1px solid $mediumGray;
+        padding: 4%;
+
+        @include rowGap(2.5vh);
+
+        p {
+            font-weight: 600;
+            color: $mainColor;
+        }
+
+        article {
+            @include rowGap(1vh);
+        }
+    }
+
+    input, textarea, select {
+        padding: 2%;
+        background-color: transparent;
+    }
+
+    input, select {
+        border: 1px solid $mainColor;
+    }
+
+    ::placeholder {
+        color: $subColor1;
+    }
+
+    textarea {
+        resize: none;
+        height: 15vh;
+    }
+
+    aside {
+        @include rowGap(1vh);
+    }
+
+    .submit {
+        flex-direction: row;
+        column-gap: 2vh;
+
+        input {
+            width: 50%;
+        }
+    }
 }
 
-
 .eReference {
-    background-color: $subColor1;
     color: $darkGray;
 
     padding-top: 5vh;
