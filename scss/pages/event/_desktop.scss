@@ -74,13 +74,33 @@ main {
     }
 }
 
-.eList {
-    
-    row-gap: 6vh;
-
+.eCategory, .eList {
     > article {
         width: $contentRatioDes;
     }
+}
+
+
+.eCategory {
+
+    padding-bottom: 1vh;
+   
+    figure {
+        width: 33vh;
+        height: 15vh;
+        cursor: pointer;
+        border-radius: 1vh;
+
+        &:hover figcaption {
+            display: flex;
+        }
+    }
+
+}
+
+.eList {
+    
+    row-gap: 6vh;
 
     summary {
         transition: .4s;
