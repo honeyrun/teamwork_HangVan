@@ -272,12 +272,14 @@ main {
         }
         figure:nth-child(2){
             background-image: url(/img/activities_2.jpg);
+            background-position: 50% 100%;
         }
         figure:nth-child(3){
             background-image: url(/img/activities_3.jpg);
         }
         figure:nth-child(4){
             background-image: url(/img/activities_4.jpeg);
+            background-position: 50% 100%;
         }
     }
     // exhibition
@@ -405,8 +407,78 @@ main {
             }
         }
     }
+    // review 
+    .review {
+        width: $contentRatioMob;
+        @include alignColumn(center);
+        row-gap: vh;
+        > article {
+            width: 100%;
+            @include alignColumn(center);
+            row-gap: 1vh;
+
+            h5 {
+                color: $subColor1;
+                font-weight: 700;
+            }
+            p {
+                text-align: center;
+                line-height: 1.5;
+                color: $mediumGray;
+            }
+            a {
+                color: $darkGray;
+                padding-bottom: .5vh;
+                border-bottom: 1px solid;
+                text-align: center;
+            }
+        }
+
+        > section {
+            width: 100%;
+            @include alignColumn(center);
+            row-gap: 6vh;
+            article {
+                width: 100%;
+                @include alignColumn(center);
+                row-gap: 1vh;
+            }
+        }
+
+        figure {
+            img{
+                width: 20vh;
+                height: 20vh;
+                border-radius: 50%;
+                box-shadow: 2px 2px 2vh;
+            }
+        }
+        blockquote {
+            @include alignColumn(center);
+                row-gap: 1vh;
+            color: $mediumGray;
+            line-height: 1.5;
+            text-align: center;
+            font-size: 12px;
+            cite{
+                color: $mainColor;
+                font-weight: 700;
+            }
+        }
+        
+        aside {
+            @include columnGap(1vh);
+            i {
+            font-size: 10px;
+            font-weight: 600;
+            }
+        }
+    }
+
     // reference
     .reference{
+        width: 100%;
+        background-color: rgba($color: $subColor2, $alpha: 0.4);
         > section {
             width: $contentRatioMob ;
         }

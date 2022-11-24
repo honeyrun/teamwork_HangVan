@@ -83,6 +83,42 @@ main {
             }
         }
     }
+    
+    // review 
+    .review {
+        width: $contentRatioTab;
+
+        > section {
+            // border: 1px solid;
+            article {
+             @include flexRow;
+             justify-content: space-between;
+            }
+
+            article:nth-child(2){
+                flex-direction: row-reverse;
+            }
+        }
+
+        blockquote {
+            @include alignColumn(flex-start);
+            row-gap: 1.5vh;
+            width: 60%;
+            font-size: 16px;
+            text-align: left;
+            cite{
+                font-size: 20px;
+            }
+        }
+        
+        aside {
+            width: 60%;
+            justify-content: left;
+            width: 100%;
+
+        }
+    }
+    
     // reference
     .reference {
         > section {

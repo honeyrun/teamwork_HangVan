@@ -1,6 +1,7 @@
 main {
     > section {
-        width: 100%;    
+        width: 100%;  
+        padding: 20vh 0;  
         
         h4 {
             font-size: 34px;
@@ -62,7 +63,8 @@ main {
             transition: .3s;
         } 
         figcaption{
-            row-gap: 1vh;
+            row-gap: 2vh;
+            padding: 0 0 5vh 5vh;
             small {
                 font-size: 14px;
             }
@@ -150,6 +152,7 @@ main {
             > section {
                 >aside{
                     section{
+                        row-gap: 1.5vh;
                         h5{
                             font-size: 30px;
                             padding-bottom: .5vh;
@@ -157,17 +160,67 @@ main {
                         }
                         small {
                             padding-top: .5vh;
+                            font-size: 10px;
+                        }
+                        p {
+                            font-size: 16px;
+                            font-weight: 700;
                         }
                         address{
                             display: block;
-                            font-size: 8px;
-                            padding-bottom: 2vh;
+                            font-size: 12px;
+                            padding-bottom: 4vh;
                         }
                     }
                 }
             }
         }
     }
+
+     // review 
+     .review {
+        width: $contentRatioDes;
+        row-gap: 14vh;
+        > article {
+            row-gap: 3vh;
+            h5 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 18px;
+                width: 60%;
+            }
+            a {
+                transition: .3s;
+            }
+            a:hover {
+                color: $subColor1;
+            }
+        }
+
+        figure {
+            img{
+                width: 40vh;
+                height: 40vh;
+                box-shadow: 2px 2px 2vh;
+            }
+        }
+        blockquote {
+            row-gap: 3vh;
+            font-size: 20px;
+            cite{
+                font-size: 26px;
+            }
+        }
+        
+        aside {
+            column-gap: 3vh;
+            i {
+                font-size: 14px;
+            }
+        }
+    }
+
     // reference
     .reference {
         > section {
