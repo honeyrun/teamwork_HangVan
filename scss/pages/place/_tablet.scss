@@ -2,6 +2,7 @@ main {
     > section {
         width: 100%;
     }
+}
     //restaurant 
     .restaurant {
         > section {
@@ -47,6 +48,14 @@ main {
     }
     // theatre
     .theatre {
+        >article {
+            width: $contentRatioTab;
+
+            h5 {
+                font-size: 22px;
+            }
+        }
+
         > section {
             width: $contentRatioTab;
 
@@ -80,4 +89,3 @@ main {
             width: $contentRatioTab;
         }
     }
-}

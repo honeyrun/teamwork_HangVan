@@ -1,7 +1,13 @@
 main {
     > section {
-        width: 100%;
+        width: 100%;    
+        
+        h4 {
+            font-size: 40px;
+        }    
     }
+
+}
     //restaurant 
     .restaurant {
         a {
@@ -68,6 +74,13 @@ main {
     }
     // theatre
     .theatre {
+        >article {
+            width: $contentRatioDes;
+
+            h5 {
+                font-size: 24px;
+            }
+        }
         > section {
             width: $contentRatioDes;
 
@@ -102,4 +115,3 @@ main {
             width: $contentRatioDes;
         }
     }
-}

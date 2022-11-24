@@ -45,32 +45,33 @@ main {
             @include alignColumn (center);
             row-gap: 1vh;
             text-align: center;
-            h4 {
-                color: $mainColor;
-                font-size: 24px;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-            i {
-                color: $mainColor;
-            }
+        }
+        h4 {
+            color: $mainColor;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        i {
+            color: $mainColor;
+        }
 
-            p {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                column-gap: 2vh;
+        p {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 2vh;
 
-                span {
-                    width: 10vh;
-                    height: 2px;
-                    background-color: $mainColor;
-                }
+            span {
+                width: 10vh;
+                height: 2px;
+                background-color: $mainColor;
             }
         }
 
     }
   @include alignColumn (center);
+}
     // restaurant
     .restaurant{
         > section {
@@ -341,6 +342,29 @@ main {
     .theatre{
         width: 100%;
         background-color: rgba($color: $subColor2, $alpha: 0.4);
+        
+        > article {
+            width: $contentRatioMob;
+            @include alignColumn(center);
+            row-gap: 1vh;
+
+            h5 {
+                color: $subColor1;
+                font-weight: 700;
+            }
+            p {
+                text-align: center;
+                line-height: 1.5;
+                color: $mediumGray;
+            }
+            a {
+                color: $darkGray;
+                padding-bottom: .5vh;
+                border-bottom: 1px solid;
+                text-align: center;
+            }
+        }
+
         > section {
             width: $contentRatioMob;
             @include alignColumn(center);
@@ -431,4 +455,4 @@ main {
             }
         }
     }
-}
+
