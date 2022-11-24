@@ -37,6 +37,43 @@ footer {
 
 //--------------------
 
+// h3 title 
+main {
+    > section{
+        > article {
+            @include alignColumn (center);
+            row-gap: 1vh;
+            text-align: center;
+        }
+    }
+  @include alignColumn (center);
+}
+
+.title {
+    h4 {
+        color: $mainColor;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    i {
+        color: $mainColor;
+    }
+
+    p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 2vh;
+
+        span {
+            width: 10vh;
+            height: 2px;
+            background-color: $mainColor;
+        }
+    }
+}
+
 .h_header {
 
     height: 100%;
@@ -87,8 +124,6 @@ footer {
 
         h3 {
             font-weight: 600;
-            border-bottom: 4px double $mainColor;
-            padding-bottom: 1vh;
             color: white;
         }
 
@@ -159,27 +194,6 @@ footer {
     
 }
 
-.eCategory, .eList {
-    width: 100%;
-
-    > article {
-        width: $contentRatioMob;
-        display: flex;
-        align-items: center;
-        column-gap: 2vh;
-
-        span {
-            border-top: 1px solid $mainColor;
-            border-bottom: 1px solid $mainColor;
-            height: 4px;
-        }
-
-        span {
-            flex: 1;
-        }
-
-    }
-}
 
 .eCategory {
 
@@ -329,9 +343,13 @@ footer {
     }
 }
 
+.eRegister {
+    background-color: $subColor2;
+}
+
 
 .eReference {
-    background-color: $subColor2;
+    background-color: $subColor1;
     color: $darkGray;
 
     padding-top: 5vh;

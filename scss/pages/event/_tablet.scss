@@ -84,11 +84,6 @@ main {
     }
 }
 
-.eCategory, .eList {
-    > article {
-        width: $contentRatioTab;
-    }
-}
 
 .eCategory {
     align-items: center;
@@ -129,7 +124,6 @@ main {
 
 
 .eList {
-
 
     > section {
         flex-direction: row;
