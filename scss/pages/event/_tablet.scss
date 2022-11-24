@@ -7,7 +7,7 @@ main {
     }
 }
 
-.top3 {
+.h_header {
 
     figcaption {
 
@@ -89,12 +89,40 @@ main {
 }
 
 .eList {
-    width: 60%;
+
+    > article {
+        width: $contentRatioTab;
+        display: flex;
+        align-items: center;
+        column-gap: 2vh;
+
+        span {
+            border-top: 1px solid $mainColor;
+            border-bottom: 1px solid $mainColor;
+            height: 4px;
+        }
+
+        span {
+            flex: 1;
+        }
+
+    }
+
+    > section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 4vh;
+    }
+
+    figure {
+        width: 47%;
+    }
     
     details {
 
         iframe {
-            height: 30vh;
+            height: 16vh;
         }
     }
 }

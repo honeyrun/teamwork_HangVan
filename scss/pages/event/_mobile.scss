@@ -37,22 +37,17 @@ footer {
 
 //--------------------
 
-main {
+.h_header {
 
-    > article {
-        width: $contentRatioMob;
-        padding-top: 8vh;
-        padding-bottom: 8vh;
-    }
-}
+    height: 100%;
 
-
-.top3 {
-
-    padding-bottom: 0;
 
     > section {
         width: 100%;
+    }
+
+    h3 {
+        text-align: center;
     }
 
     figcaption {
@@ -94,6 +89,7 @@ main {
             font-weight: 600;
             border-bottom: 4px double $mainColor;
             padding-bottom: 1vh;
+            color: white;
         }
 
         span {

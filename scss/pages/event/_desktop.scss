@@ -1,11 +1,13 @@
-main {
 
-    > article {
-        width: $contentRatioDes;
+main {
+    > section {
+        padding-top: 12vh;
+        padding-bottom: 12vh;
     }
 }
 
-.top3 {
+
+.h_header {
 
     figcaption {
         
@@ -27,6 +29,7 @@ main {
             padding: 1.5vh;
         }
     }
+
 }
 
 .eFeature {
@@ -72,9 +75,11 @@ main {
 }
 
 .eList {
+    
+    row-gap: 6vh;
 
-    > section {
-        padding: 2%;
+    > article {
+        width: $contentRatioDes;
     }
 
     summary {
@@ -87,6 +92,12 @@ main {
 
     a:hover {
         color: $mainColor;
+    }
+    
+    details {
+        iframe {
+            height: 22vh;
+        }
     }
 
 }
