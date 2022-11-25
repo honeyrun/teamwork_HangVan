@@ -1,6 +1,32 @@
 
+.about {
+    > section {
+        > article {
+            flex-direction: row;
+            column-gap: 5vh;
+        }
+
+        figcaption {
+            font-size: 42px;
+        }
+    }
+
+    aside {
+        width: 80%;
+        text-align: left;
+        row-gap: 1vh;
+        align-items: flex-start;
+    }
+
+    h4 {
+        width: unset;
+        text-align: left;
+    }
+}
 
 .event {
+
+    padding-bottom: 2vh;
 
     > article {
         width: $contentRatioDes;
@@ -60,5 +86,57 @@
             
         }
 
+    }
+}
+
+.contact {
+    @include flexRow(4%);
+    align-items: flex-start;
+    justify-content: center;
+    
+    > aside {
+        width: $contentRatioDes;
+    }
+
+    > section {
+        width: 37%;
+
+        input:nth-child(1),
+        input:nth-child(2) {
+            width: 100%;
+        }
+
+        textarea {
+            width: 96%;
+        }
+
+        aside {
+            width: 100%;
+        }
+        
+        [type="submit"] {
+            padding: 1vh 0;
+            transition: .3s;
+        }
+
+        [type="submit"]:hover {
+            background-color: $subColor1;
+            color: $whitegray;
+        }
+
+    }
+
+    > article {
+        width: 37%;
+        padding-top: 0;
+        row-gap: 6vh;
+
+        a{
+            transition: .3s;
+        }
+
+        a:hover {
+            color: $mainColor;
+        }
     }
 }

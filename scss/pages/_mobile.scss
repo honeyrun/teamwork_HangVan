@@ -20,7 +20,8 @@
     h3 {
         font-size: $defaultH3Mob;
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 600;
+        color: $mainColor;
     }
     
     // NAV
@@ -96,17 +97,19 @@
 
  // header
  header {
+    padding-top: 5vh;
+    height: 28vh;
+    display: flex;
+
     video {
-        padding-top: 7vh;
+        height: 100%;
         width: 100%;
         position: relative;
         object-position: center;
         object-fit: cover;
-        height: 28vh;
     }
     > article {
         position: absolute;
-        top: 7vh;
         width: 100%;
         height: 28vh;
         background-color: rgba($color: #444, $alpha: 0.5);
@@ -120,33 +123,120 @@
             justify-content: center;
             row-gap: 1.5vh;
             color: $whitegray;
-            h2 {
-                font-size: 20px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        strong {
+            font-weight: 400;
+            font-size: 10px;
+            span {
+                font-size: 14px;
+                font-weight: 700;
+                color: $subColor1;
+                text-shadow: 1.5px 1.5px $darkGray;
             }
-            strong {
-                font-weight: 400;
-                font-size: 10px;
-                span {
-                    font-size: 14px;
-                    font-weight: 700;
-                    color: $subColor1;
-                    text-shadow: 1.5px 1.5px $darkGray;
-                }
-            }
-            p {
-                display: none;
-            }
-            a {
-                padding: .5vh;
-                font-size: 8px;
-                color: $whitegray;
-                border: 1px solid $whitegray;
-                border-radius: 5px;
-            }
+        }
+        p {
+            display: none;
+        }
+        a {
+            padding: .5vh;
+            font-size: 8px;
+            color: $whitegray;
+            border: 1px solid $whitegray;
+            border-radius: 5px;
         }
     }
 }
 
+// footer
+footer {
+    color: white;
+    font-size: 13px;
+    line-height: 2;
+    @include alignColumn(center);
+
+    > section {
+        padding: 5%;
+        width: 90%;
+        background-color: #444;
+        @include rowGap(1.3vh);
+    }
+
+    section:last-child {
+        background-color: #222;
+        color: darkgray;
+        text-align: center
+    }
+
+    article {
+        @include rowGap(1.3vh);
+    }
+
+    ul {
+        display: flex;
+        column-gap: 1.5vh;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    form {
+        @include rowGap(1.3vh);
+
+        article {
+            flex-direction: row;
+            align-items: flex-start;
+            line-height: 1.5;
+            color: darkgray;
+        }
+
+        article:last-child {
+            display: block;
+        }
+    }
+
+    input {
+        padding: 2%;
+    }
+
+    aside {
+        @include rowGap(1vh);
+    }
+
+    a, address {
+        color: darkgray;
+    }
+
+    a {
+        width: fit-content;
+    }
+
+    address {
+        font-style: normal;
+    }
+
+    i {
+        font-family: $defaultFont;
+    }
+
+    .fa-brands {
+        width: 3vh;
+        height: 3vh;
+        border: 1px solid darkgray;
+        border-radius: 50%;
+        @include alignColumn(center);
+        justify-content: center;
+    }
+}
+
+h6 {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
 
     @import 'home/mobile';
