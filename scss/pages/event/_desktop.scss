@@ -9,6 +9,18 @@ main {
 
 .h_header {
 
+    h3 {
+        font-size: 18px;
+        padding: 0.5% 1%;
+    }
+
+    > section {
+        > article {
+            top: 3vh;
+            height: 15vh;
+        }
+    }
+
     figcaption {
         
         h2 {

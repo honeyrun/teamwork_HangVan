@@ -80,13 +80,12 @@ main {
 
     height: 100%;
 
+    h3 {
+        display: none;
+    }
 
     > section {
         width: 100%;
-    }
-
-    h3 {
-        text-align: center;
     }
 
     figcaption {
