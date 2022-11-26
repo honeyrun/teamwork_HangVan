@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>teamwork_hangVan_event</title>
+</head>
+<body>
+    <!-- NAV -->
+    <nav>
+        <h1><i class="fa-solid fa-ticket"></i>HangVan</h1>
+        <article>
+            <ul>
+                <li class="dropdown_custom">
+                    <a href="./index.html" class="dropbtn">HOME</a>
+                    <aside class="dropdown-content">
+                        <a href="./index.html#about">About</a>
+                        <a href="./index.html#event">Recent Event</a>
+                        <a href="./index.html#place">Place To Go</a>
+                        <a href="./index.html#contact">Contact</a>
+                    </aside>
+                </li>
+                <li class="dropdown_custom">
+                    <a href="./event.html" class="dropbtn">EVENT</a>
+                    <aside class="dropdown-content">
+                        <a href="#eFeature">Featured Event</a>
+                        <a href="#eCategory">Category</a>
+                        <a href="#eList">Event List</a>
+                        <a href="#eArticle">Articles</a>
+                        <a href="#eRegister">Register Event</a>
+                        <a href="#eReference">References</a>
+                    </aside>
+                </li>
+                <li class="dropdown_custom">
+                    <a href="./place.html" class="dropbtn">PLACE</a>
+                    <aside class="dropdown-content">
+                        <a href="./place.html#restaurant">Restaurant</a>
+                        <a href="./place.html#activities">Activities</a>
+                        <a href="./place.html#exhibition">Exhibition</a>
+                        <a href="./place.html#theatre">Theatre</a>
+                        <a href="./place.html#review">Review</a>
+                        <a href="./place.html#reference">Reference</a>
+                    </aside>
+                </li>
+            </ul>
+            <form>
+                <input type="search" placeholder="Search">
+                <input type="submit" value="Search">
+            </form>
+        </article>
+        <details>
+            <summary class="fa-solid fa-bars"></summary>
+            <ul>
+                <li>
+                    <a href="./index.html">HOME</a>
+                    <ul>
+                        <li><a href="./index.html#about">About</a></li>
+                        <li><a href="./index.html#event">Recent Event</a></li>
+                        <li><a href="./index.html#place">Place To Go</a></li>
+                        <li><a href="./index.html#contact">Contact</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./event.html">EVENT</a>
+                    <ul>
+                        <li><a href="#eFeature">Featured Event</a></li>
+                        <li><a href="#eCategory">Category</a></li>
+                        <li><a href="#eList">Event List</a></li>
+                        <li><a href="#eArticle">Articles</a></li>
+                        <li><a href="#eRegister">Register Event</a></li>
+                        <li><a href="#eReference">References</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./place.html">PLACE</a>
+                    <ul>
+                        <li><a href="./place.html#restaurant">Restaurant</a></li>
+                        <li><a href="./place.html#activities">Activities</a></li>
+                        <li><a href="./place.html#exhibition">Exhibition</a></li>
+                        <li><a href="./place.html#theatre">Theatre</a></li>
+                        <li><a href="./place.html#review">Review</a></li>
+                        <li><a href="./place.html#reference">Reference</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </details>
+    </nav>
+    <!-- NAV END -->
+    <!-- HEADER -->
+    <header class="h_header">
+        <section>
+            <article>
+                <h3>canada top3 festival</h3>
+            </article>
+            <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <article class="carousel-inner">
+                  <figure class="carousel-item active" data-bs-interval="10000">
+                    <img src="./img/top1.jpeg" class="d-block w-100" alt="top1">
+                    <figcaption class="carousel-caption d-md-block">
+                        <h2>#1 Celebration Of Light</h2>
+                        <h4>late July 2023 (unconfirmed)</h4>
+                        <p>
+                            The celebration of life is fireworks and musical extravaganza which usually takes places in the period of July - August. Usually, it is a week-long festival in which the fireworks teams from three selected countries perform and compete with each other. Fireworks during the celebration are phenomenal and breathtaking.
+                        </p>
+                        <a href="#">Read More</a>
+                    </figcaption>
+                  </figure>
+                  <figure class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/top2.jpg" class="d-block w-100" alt="top2">
+                    <figcaption class="carousel-caption d-md-block">
+                        <h2>#2 Winterlude</h2>
+                        <h4>Feb 3 - Feb 20, 2023</h4>
+                        <p>
+                            Winterlude is a three-week-long winter festival which usually starts in the first week of February each year. This is a carnival of ice - ice sports, ice art, and cheerful music. Ice skating at Rideau Canal Skateway is a unique experience in itself, as it is the world's largest skate rink. Ice sculptures, various musical events, and kids activities are the central attraction of this festival.
+                        </p>
+                        <a href="#">Read More</a>
+                    </figcaption>
+                  </figure>
+                  <figure class="carousel-item">
+                    <img src="./img/top3.jpeg" class="d-block w-100" alt="top3">
+                    <figcaption class="carousel-caption d-md-block">
+                        <h2>#3 Montreal Jazz Festival</h2>
+                        <h4>June 29 - July 8, 2023</h4>
+                        <p>
+                            One of the most vivacious Canada festivals, this carnival is a paradise for Jazz lovers and musicians. This is the biggest Jazz festival in the world and also holds a Guinness Book record for it. It is a ten-day musical fiesta in the city of Montreal and hosts 20 or more stages for the performers and musicians from the world over. The audience attending this Jazz fete has recorded to be in millions.
+                        </p>
+                        <a href="#">Read More</a>
+                    </figcaption>
+                  </figure>
+                </article>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </section>
+        </section>
+    </header>
+    <!-- HEADER END -->
+    <!-- MAIN -->
+    <main>
+        <!-- FEATURE -->
+        <section class="eFeature" id="eFeature">
+            <article class="title">
+                <h3>Featured Event on <span>DEC</span></h3>
+                <p><span></span><i class='fa-solid fa-ticket'></i><span></span></p>
+            </article>
+            <section>
+                <figure>
+                    <img src="./img/eventThum1.jpg" alt="feature">
+                    <figcaption>
+                        <h4>Once Upon A Manger - Singing Christmas Tree 2022</h4>
+                        <p>
+                            For more than 50 years, this highly popular Vancouver tradition sees a choir of 80+ singers arranged in a giant, 10-layer on-stage Christmas tree. Musicians, actors, dancers and even acrobats add to the festivities in a family-friendly show that has long been one of the hottest holiday tickets in town. Reserve far ahead - tickets will be available from 5pm on November 2 - and arrive early for the show since they always "oversell" and sometimes have to turn people away even if they have tickets.
+                        </p>
+                    </figcaption>
+                </figure>
+            </section>
+            <article>
+                <h3>Gallery</h3>
+            </article>
+            <aside>
+                <a href="#" class="pic1">
+                    <figure></figure>
+                </a>
+                <a href="#" class="pic2">
+                    <figure></figure>
+                </a>
+                <a href="#" class="pic3">
+                    <figure></figure>
+                </a>
+                <a href="#" class="pic4">
+                    <figure></figure>
+                </a>
+                <a href="#" class="pic5">
+                    <figure></figure>
+                </a>
+                <a href="#" class="pic6">
+                    <figure></figure>
+                </a>
+            </aside>
+        </section>
+        <!-- FEATURE END -->
+        <!-- CATERORY -->
+        <section class="eCategory" id="eCategory">
+            <article class="title">
+                <h3>Event Category</h3>
+                <p><span></span><i class='fa-solid fa-ticket'></i><span></span></p>
+            </article>
+            <section>
+                <figure>
+                    <img src="./img/top1.jpeg" alt="category1">
+                    <figcaption>
+                        <h4>festivals</h4>
+                        <a href="#">Discover More</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/cat2.jpg" alt="category2">
+                    <figcaption>
+                        <h4>art events</h4>
+                        <a href="#">Discover More</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/cat3.jpg" alt="category3">
+                    <figcaption>
+                        <h4>charity</h4>
+                        <a href="#">Discover More</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/cat4.jpg" alt="category4">
+                    <figcaption>
+                        <h4>sports event</h4>
+                        <a href="#">Discover More</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/cat5.jpg" alt="category5">
+                    <figcaption>
+                        <h4>workshops</h4>
+                        <a href="#">Discover More</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/cat6.jpg" alt="category6">
+                    <figcaption>
+                        <h4>entertainments</h4>
+                        <a href="#">Discover More</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/cat7.jpg" alt="category7">
+                    <figcaption>
+                        <h4>holiday events</h4>
+                        <a href="#">Discover More</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/cat8.jpg" alt="category8">
+                    <figcaption>
+                        <h4>performances</h4>
+                        <a href="#">Discover More</a>
+                    </figcaption>
+                </figure>
+            </section>
+        </section>
+        <!-- LIST -->
+        <section class="eList" id="eList">
+            <article class="title">
+                <h3>Event List</h3>
+                <p><span></span><i class='fa-solid fa-ticket'></i><span></span></p>
+            </article>
+            <section>
+                <figure>
+                    <img src="./img/eventThum4.jpg" alt="eventThum4">
+                    <figcaption>
+                        <h5>Charity</h5>
+                        <h4>United for Ukraine Gala Dinner Fundraising</h4>
+                        <h6>Sun, Nov 27, 5:30 pm</h6>
+                        <address><i class="fa-solid fa-location-dot"></i> The Vancouver Club, 915 West Hastings Street, Vancouver</address>
+                        <p>CAD $200</p>
+                        <details>
+                            <summary>Read More</summary>
+                            <h6>Event Info</h6>
+                            <p>
+                                Part of the BC Benefit Concerts in Support of Ukraine collection /
+                                Black tie fundraising reception with a program to benefit Ukraine and its children.
+                            </p>
+                            <ul>
+                                <li>A special a la Ukrainian style dessert included in the ticket</li>
+                                <li>Performances featuring Ukrainian artists, art and culture</li>
+                                <li>Exhibition and sale of art, crafts, jewelry, souvenirs, paintings etc</li>
+                                <li>A beautiful heritage venue in the heart of Vancouver's downtown offering elegant ambiance and serviced by an expert catering team</li>
+                            </ul>
+                            <h6>Location</h6>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.4368443703174!2d-123.11786348441649!3d49.28706737838109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867182f9e88c73%3A0x8fcd691675088a33!2s915%20W%20Hastings%20St%2C%20Vancouver%2C%20BC%20V6C%201C6!5e0!3m2!1sko!2sca!4v1669014744640!5m2!1sko!2sca"></iframe>
+                        </details>
+                        <aside>
+                            <a href="#"><i class="fa-solid fa-share-nodes"></i> share</a>
+                            <a href="#">Get Ticket<i class="fa-solid fa-chevron-right"></i></a>
+                        </aside>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/eventThum5.jpg" alt="eventThum5">
+                    <figcaption>
+                        <h5>Sports</h5>
+                        <h4>CANADA vs BELGIUM WorldCup Watching</h4>
+                        <h6>Wed, Nov 23, 11:00 AM</h6>
+                        <address><i class="fa-solid fa-location-dot"></i> The Library Square Pub, 300 West Georgia Street, Vancouver</address>
+                        <p>CAD $10</p>
+                        <details>
+                            <summary>Read More</summary>
+                            <h6>Event Info</h6>
+                            <p>
+                                WATCH THE WORLD CUP QATAR 2022 ON A LIVE STREAM AT THE LIBRARY SQUARE PUB!
+                                Let's get together and watch our favorite teams playing on a live stream! Tickets $10 INCLUDING a welcome drink of your choice! (Coffee, Pop, Juice or Beer)
+                            </p>
+                            <ul>
+                                <li>With multiple TVs and amazing sound system!</li>
+                                <li>Comfortable space for you to sit back and relax while watching!</li>
+                                <li>Limited tickets only! Get your tickets now before it's gone!</li>
+                            </ul>
+                            <h6>Location</h6>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.8034914023524!2d-123.11706778441682!3d49.280120678873345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717e98d21517%3A0x2d2a72db22c19524!2sThe%20Library%20Square%20Pub!5e0!3m2!1sko!2sca!4v1669193806640!5m2!1sko!2sca"></iframe>
+                        </details>
+                        <aside>
+                            <a href="#"><i class="fa-solid fa-share-nodes"></i> share</a>
+                            <a href="#">Get Ticket<i class="fa-solid fa-chevron-right"></i></a>
+                        </aside>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/eventThum6.jpg" alt="eventThum6">
+                    <figcaption>
+                        <h5>Entertainments</h5>
+                        <h4>Blind Tiger Comedy Show: Everything is Fine</h4>
+                        <h6>Sat, Nov 25, 6:00 pm</h6>
+                        <address><i class="fa-solid fa-location-dot"></i> China Cloud Studios, 524 Main Street, Vancouver</address>
+                        <p>CAD $15</p>
+                        <details>
+                            <summary>Read More</summary>
+                            <h6>Event Info</h6>
+                            <p>
+                                And after watching this show, everything is going to be a whole lot better!
+                            </p>
+                            <ul>
+                                <li>This Wednesday, 23rd November, 08:00 pm, Blind Tiger Comedy Show: Everything is Fine - LATE SHOW in Vancouver</li>
+                                <li>Next Wednesday, 30th November, 07:00 pm, Blind Tiger Comedy Show: Pure Bread - EARLY SHOW in Vancouver</li>
+                                <li>Also check out other Comedy Events in Vancouver, Performances in Vancouver, Workshops in Vancouver.</li>
+                            </ul>
+                            <h6>Location</h6>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.8122471415195!2d-123.10145988441673!3d49.27995477888503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717014967307%3A0x2089bb4fcf671cf4!2sThe%20China%20Cloud!5e0!3m2!1sko!2sca!4v1669194206193!5m2!1sko!2sca"></iframe>
+                        </details>
+                        <aside>
+                            <a href="#"><i class="fa-solid fa-share-nodes"></i> share</a>
+                            <a href="#">Get Ticket<i class="fa-solid fa-chevron-right"></i></a>
+                        </aside>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/eventThum7.jpg" alt="eventThum7">
+                    <figcaption>
+                        <h5>Performance</h5>
+                        <h4>Blue Rodeo: Many A Mile Tour - Rock Music</h4>
+                        <h6>Wed, DEC 15,8:00 pm </h6>
+                        <address><i class="fa-solid fa-location-dot"></i> Queen Elizabeth Theatre, Vancouver</address>
+                        <p>CAD $39 to $85</p>
+                        <details>
+                            <summary>Read More</summary>
+                            <h6>Event Info</h6>
+                            <p>
+                                Blue Rodeo & Jenn Grant which are specially known for Music, Rock. Accessible seating is configured with a 1 to 1 arrangement in the Orchestra and Mezzanine Levels. Companions will have a seat provided to them beside the wheelchair. Additional companion seats may be purchased in sections nearby.
+                            </p>
+                            <h6>Location</h6>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.789109565227!2d-123.11484388441683!3d49.28039317885408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717c0141f5e7%3A0x7f9d3750ebc8785a!2z7YC4IOyXmOumrOyekOuyoOyKpCDqt7nsnqU!5e0!3m2!1sko!2sca!4v1669272402392!5m2!1sko!2sca" ></iframe>
+                        </details>
+                        <aside>
+                            <a href="#"><i class="fa-solid fa-share-nodes"></i> share</a>
+                            <a href="#">Get Ticket<i class="fa-solid fa-chevron-right"></i></a>
+                        </aside>
+                    </figcaption>
+                </figure>
+            </section>
+        </section>
+        <!-- LIST END -->
+        <section class="eArticle" id="eArticle">
+            <article class="title">
+                <h3>Articles</h3>
+                <p><span></span><i class='fa-solid fa-ticket'></i><span></span></p>
+            </article>
+            <section>
+                <article class="article1">
+                    <aside>
+                        <h4>What are your Turkey Day traditions?</h4>
+                        <small>Nov. 21, 2022 
+                            by Natalie Proulx</small>
+                        <p>
+                            A recent Times piece on “The American Thanksgiving” asked 15 families from all different backgrounds across the country to show the holiday dishes they make that speak best about their heritage and traditions. How do you and your family or community celebrate Thanksgiving...
+                        </p>
+                        <a href="#">Read More</a>
+                    </aside>
+                </article>
+                <article class="article2">
+                    <aside>
+                        <h4>'Elf, The Musical' hits a workshop near London, Ont. at The Grand Theatre</h4>
+                        <small>Nov. 24, 2022 
+                            by Amy Simon</small>
+                        <p>
+                            “I can think of no better play for this specific holiday season than Elf,” remarks Dennis Garnhum, artistic director for the Grand. “With his incredible optimism and unyielding altruism, Buddy the Elf reminds us all of the importance of kindness and the joy that can be found not just on Christmas, but in the every day...
+                        </p>
+                        <a href="#">Read More</a>
+                    </aside>
+                </article>
+            </section>
+        </section>
+        <!-- REGISTER -->
+        <section class="eRegister" id="eRegister">
+            <article class="title">
+                <h3>Are you a event organizer?</h3>
+                <p>
+                    If so, you can register your event through below form
+                </p>
+            </article>
+            <section>
+                <form method="post">
+                    <article>
+                        <p>Organizer Info</p>
+                        <aside>
+                            <input type="text" name="Name" placeholder="Organiztion Name">
+                            <input type="tel" name="phone" placeholder="Phone Number">
+                            <input type="email" name="email" placeholder="Email Address">
+                        </aside>
+                    </article>
+                    <article>
+                        <p>Event Category</p>
+                        <select name="title" id="title">
+                            <option value="" disabled selected>Please select the category</option>
+                            <option value="Festivals">Festivals</option>
+                            <option value="Arts">Arts</option>
+                            <option value="Charity">Charity</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Workshop">Workshop</option>
+                            <option value="Entertainment">Entertainment</option>
+                            <option value="Holiday">Holiday Event</option>
+                            <option value="Performance">Performance</option>
+                        </select>
+                        <p>Event Date & Time</p>
+                        <aside>
+                            <input type="date">
+                            <input type="time">
+                        </aside>
+                    </article>
+                    <article>
+                        <p>Location</p>
+                        <aside>
+                            <input type="text" name="First Address" placeholder="Address1">
+                            <input type="text" name="Second Address" placeholder="Address2">
+                        </aside>
+                    </article>
+                    <textarea name="details" placeholder="Event Details"></textarea>
+                    <aside class="submit">
+                        <input type="reset">
+                        <input type="submit" value="Register">
+                    </aside>
+                </form>
+            </section>
+        </section>
+        <!-- REGISTER END -->
+        <!-- REFERENCE -->
+        <section class="eReference" id="eReference">
+            <article class="title">
+                <h3>References</h3>
+                <p><span></span><i class='fa-solid fa-ticket'></i><span></span></p>
+            </article>
+            <section>
+                <article>
+                    <h4>event info sources</h4>
+                    <aside>
+                        <a href="https://allevents.in/vancouver/once-upon-a-manger-singing-christmas-tree-2022/10000419859469977" target="_blank">Once Upon A Manger - Singing Christmas Tree 2022</a>
+                        <a href="https://allevents.in/vancouver/mingle-all-the-way-vancouver-christmas-market-with-the-gcp/10000468022747637" target="_blank">Mingle All The Way: Vancouver Christmas Market with the GCP</a>
+                        <a href="https://allevents.in/vancouver/vancouver-new-years-eve-2023-gatsbys-house-party/10000350820833557" target="_blank">Vancouver New Year's Eve 2023 - Gatsby's House Party
+                        </a>
+                        <a href="https://allevents.in/vancouver/united-for-ukraine-gala-dinner/10000432105387847" target="_blank">United for Ukraine Gala Dinner</a>
+                    </aside>
+                </article>
+                <article>
+                    <aside>
+                        <a href="https://allevents.in/vancouver/canada-vs-belgium-wed-nov-23-11-00-am/10000464844350967" target="_blank">CANADA vs BELGIUM WorldCup Watching</a>
+                        <a href="https://allevents.in/vancouver/blind-tiger-comedy-show-everything-is-fine-early-show/10000461943885597" target="_blank">Blind Tiger Comedy Show: Everything is Fine</a>
+                        <a href="https://allevents.in/vancouver/blue-rodeo-many-a-mile-tour/210001121190957" target="_blank">Blue Rodeo: Many A Mile Tour</a>
+                        <a href="https://traveltriangle.com/blog/festivals-of-canada/" target="_blank">CANADA Top3 Festivals: traveltriangle.com</a>
+                        <a href="https://vancouversct.com/" target="_blank">Featured : Gallery</a>
+                        <a href="https://www.nytimes.com/2022/11/21/learning/10-prompts-for-talking-and-writing-about-thanksgiving.html" target="_blank">Article1</a>
+                        <a href="https://globalnews.ca/news/9297335/elf-the-musical-grand-theatre-2022/" target="_blank">Article2</a>
+                    </aside>
+                </article>
+                <article>
+                    <h4>dropdown menu</h4>
+                    <aside>
+                        <a href="https://www.w3schools.com/css/css_dropdowns.asp" target="_blank">www.w3schools.com</a>
+                    </aside>
+                    <h4>carousel</h4>
+                    <aside>
+                        <a href="https://getbootstrap.com/docs/5.2/components/carousel/" target="_blank">getbootstrap.com</a>
+                    </aside>
+                </article>
+            </section>
+        </section>
+        <!-- REFERENCE END -->
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <section>
+            <article>
+                <aside>
+                    <h6>pages</h6>
+                    <ul>
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./event.html">event</a></li>
+                        <li><a href="./place.html">place</a></li>
+                    </ul>
+                </aside>
+                <aside>
+                    <h6>services</h6>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Terms and Condition</a></li>
+                    </ul>
+                </aside>
+            </article>
+            <article>
+                <aside>
+                    <h6>Contact</h6>
+                    <ul>
+                        <li><a href="#" class='fa-brands fa-facebook-f'></a></li>
+                        <li><a href="#" class='fa-brands fa-twitter'></a></li>
+                        <li><a href="#" class="fa-brands fa-github"></a></li>
+                        <li><a href="#" class="fa-brands fa-linkedin-in"></a></li>
+                    </ul>
+                    <a href="tel:+16048994480"><i class="fa-solid fa-phone"></i> +16048994480</a>
+                    <address><i class="fa-regular fa-envelope"></i> 889 W Pender St #200, Vancouver, BC V6C 3B2</address>
+                </aside>
+                <form>
+                    <h6>Newsletter</h6>
+                    <article>
+                        <input type="email" name="email" placeholder='Email address'>
+                        <input type="submit" name="submit" value='&#x2192;'>
+                    </article>
+                    <article>
+                        <input type="checkbox" name='subscribe'>
+                        Subscribe to receive communications from HangVan about our products and services. By subscribing, you confirm you have read and accept our privacy policy 
+                    </article>
+                </form>
+            </article>
+        </section>
+        <section>
+            <aside>
+                <p>HangVan</p>
+                <p>
+                    &copy; HangVan Company. All rights reserved.
+                </p>
+            </aside>
+        </section>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
