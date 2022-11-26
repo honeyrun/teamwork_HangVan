@@ -7,8 +7,12 @@ header.y_header {
     h2 {
         font-size: 28px;
     }
-    p {
+    p { 
+        display: block;
         font-size: 18px;
+        width: 70%;
+    }
+    form {
         width: 50%;
     }
 
