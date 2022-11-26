@@ -39,7 +39,7 @@ footer {
 //--------------------
 
 // header 
-header {
+header.y_header {
     height: 45vh;
     @include backImg;
     background-image: url(/img/header_y.jpg);
