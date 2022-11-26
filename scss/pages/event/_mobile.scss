@@ -120,6 +120,7 @@ main {
 
     background-color: $darkGray;
     color: white;
+    width: 100%;
 
     > article {
 
@@ -134,6 +135,7 @@ main {
     }
 
     > section {
+        
         figure {
             @include rowGap(3vh);
         }
@@ -142,6 +144,7 @@ main {
             @include rowGap(2vh);
             h4 {
                 line-height: 1.5;
+                color: white;
             }
             p {
                 color: #989898;
@@ -352,7 +355,6 @@ main {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 26vh;
         }
 
         p {
@@ -380,6 +382,9 @@ main {
         border: 1px solid $subColor2;
     }
    
+    h4 {
+        color: white;
+    }
 
     .article1 {
         background-image: url(/img/article1.jpg);
