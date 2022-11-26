@@ -1,0 +1,492 @@
+
+//Removing bootstrap attribute for NAV
+
+nav, details {
+    box-sizing: content-box;
+}
+
+
+body {
+    line-height: normal;
+}
+
+h1, h2, h3, h4, h5, h6, address, p, figure {
+    margin: 0;
+}
+
+input {
+    font-size: initial;
+    line-height: normal;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+footer {
+    > section {
+        box-sizing: content-box;
+    }
+}
+
+//--------------------
+
+// h3 title 
+main {
+    > section{
+        > article {
+            @include alignColumn (center);
+            row-gap: 1vh;
+            text-align: center;
+            width: fit-content
+        }
+    }
+  @include alignColumn (center);
+}
+
+.title {
+    h4 {
+        color: $mainColor;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    i {
+        color: $mainColor;
+    }
+
+    p {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 2vh;
+
+        span {
+            width: 50%;
+            height: 2px;
+            background-color: $mainColor;
+        }
+    }
+}
+
+.h_header {
+
+    height: 100%;
+
+    h3 {
+        display: none;
+    }
+
+    > section {
+        width: 100%;
+    }
+
+    figcaption {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 5% 13%;
+        position: absolute;
+        color: white;
+        background-image: linear-gradient(transparent 0%, rgba($color: #000000, $alpha: 0.7) 30%);
+        line-height: 1.5;
+        text-align: center;
+        
+        h2 {
+            font-size: 20px;
+            padding-bottom: 4vh;
+        }
+
+        h4, p {
+            display: none;
+        }
+
+        a {
+            color: $subColor2;
+            border: 2px solid $subColor2;
+            padding: 0.5vh;
+        }
+    }
+}
+
+.eFeature {
+
+    background-color: $darkGray;
+    color: white;
+
+    > article {
+
+        h3 {
+            font-weight: 600;
+            color: white;
+        }
+
+        span {
+            color: $subColor2;
+        }
+    }
+
+    > section {
+        figure {
+            @include rowGap(3vh);
+        }
+        figcaption {
+            padding: 4%;
+            @include rowGap(2vh);
+            h4 {
+                line-height: 1.5;
+            }
+            p {
+                color: #989898;
+                line-height: 1.4;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        
+    }
+
+    > aside {
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 2vh;
+
+        a {
+            width: 100%;
+        }
+
+        figure {
+            height: 21vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+    }
+   
+    .pic1 figure {
+        background-image: url(/img/eGallery1.jpeg);
+    }
+    .pic2 figure {
+        background-image: url(/img/eGallery2.jpeg);
+    }
+    .pic3 figure {
+        background-image: url(/img/eGallery3.jpeg);
+    }
+    .pic4 figure {
+        background-image: url(/img/eGallery4.jpeg);
+    }
+    .pic5 figure {
+        background-image: url(/img/eGallery5.jpeg);
+    }
+    .pic6 figure {
+        background-image: url(/img/eGallery6.jpeg);
+    }
+}
+
+.eCategory {
+
+    > section {
+        @include rowGap(2vh);
+        align-items: center;
+    }
+   
+    figure {
+        width: 30vh;
+        height: 15vh;
+        position: relative;
+        border-radius: 2vh;
+        overflow: hidden;
+        display: flex;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    figcaption {
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        position: absolute;
+        @include alignColumn(center);
+        justify-content: center;
+        row-gap: 2vh;
+
+        > a {
+            color: $subColor2;
+            border: 1px solid $subColor2;
+            padding: 1vh;
+        }
+    }
+
+    h4 {
+        color: white;
+        font-size: 23px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+.eList {
+
+    @include rowGap(4vh);        
+
+    > section {
+        @include rowGap(2vh);        
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+        height: 22vh;
+        object-fit: cover;
+    }
+
+    figcaption {
+        padding: 5%;
+        border: 1px solid $lightgray;
+        border-top: 0px none transparent;
+        @include rowGap(2vh);
+
+        > h6 {
+            color: $mediumGray;
+        }
+    }
+
+    details {
+        line-height: 1.5;
+
+        h6 {
+            font-weight: 600;
+        }
+
+        p, h6, li {
+            padding-bottom: 1.4vh;
+        }
+
+        li {
+            color: $mediumGray;
+            font-style: italic;
+        }
+
+        iframe {
+            width: 100%;
+            height: 20vh;
+        }
+    }
+
+    details[open] {
+        > summary {
+            display: none;
+        }
+    }
+
+    summary {
+        list-style-type: none;
+        border: 1px solid $mainColor;
+        color: $mainColor;
+        text-align: center;
+        padding: 2%;
+    }
+
+    summary::marker {
+        display: none;
+    }
+
+    h5 {
+        font-size: 16px;
+        color: white;
+        background-color: $subColor1;
+        width: fit-content;
+        padding: 2%;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        font-weight: 600;
+    }
+
+   p {
+        font-size: 16px;
+        color: $mainColor;
+   }
+
+   aside {
+        display: flex;
+        justify-content: space-between;
+        color: $darkGray;
+
+        a {
+            display: flex;
+            align-items: center;
+            column-gap: 1vh;
+            color: $subColor1;
+        }
+    }
+}
+
+.eArticle {
+
+    > section {
+        row-gap: 2vh;
+
+        >  article {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 26vh;
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+    aside {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient( rgba($color: #000000, $alpha: 0.6) 50%, rgba($color: #000000, $alpha: 0.2) 100%);
+        @include rowGap(2vh);
+        color: white;
+        padding: 5%;
+    }
+
+    small {
+        color: gray;
+    }
+
+    a {
+        width: fit-content;
+        color: $subColor2;
+        padding: 2%;
+        border: 1px solid $subColor2;
+    }
+   
+
+    .article1 {
+        background-image: url(/img/article1.jpg);
+    }
+
+    .article2 {
+        background-image: url(/img/article2.jpg);
+    }
+}
+
+.eRegister {
+    background-color: rgba($color: $subColor2, $alpha: 0.3);
+    width: 100%;
+
+    > article {
+        text-align: center;
+        width: 80%;
+        row-gap: 2.5vh;
+
+        h3 {
+            font-size: 30px;
+        }
+
+        p {
+            color: $darkGray;
+            font-size: 16px;
+            justify-content: center;
+        }
+    }
+
+    form {
+        width: 100%;
+        border: 1px solid $mediumGray;
+        padding: 4%;
+
+        @include rowGap(2.5vh);
+
+        p {
+            font-weight: 600;
+            color: $mainColor;
+        }
+
+        article {
+            @include rowGap(1vh);
+        }
+    }
+
+    input, textarea, select {
+        padding: 2%;
+        background-color: transparent;
+    }
+
+    input, select {
+        border: 1px solid $mainColor;
+    }
+
+    ::placeholder {
+        color: $subColor1;
+    }
+
+    textarea {
+        resize: none;
+        height: 15vh;
+    }
+
+    aside {
+        @include rowGap(1vh);
+    }
+
+    .submit {
+        flex-direction: row;
+        column-gap: 2vh;
+
+        input {
+            width: 50%;
+        }
+    }
+}
+
+.eReference {
+    color: $darkGray;
+
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    @include rowGap(3vh);
+
+    > section {
+        @include rowGap(2.2vh);
+
+        > article {
+            @include rowGap(2vh);
+        }
+    }
+
+    aside {
+        @include rowGap(2vh);
+    }
+
+    a {
+        color: $mainColor;
+        font-size: 13px;
+    }
+
+    h4 {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+}

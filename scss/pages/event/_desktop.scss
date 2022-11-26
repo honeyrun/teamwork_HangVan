@@ -1,0 +1,161 @@
+
+main {
+    > section {
+        padding-top: 12vh;
+        padding-bottom: 12vh;
+    }
+}
+
+
+.h_header {
+
+    h3 {
+        font-size: 18px;
+        padding: 0.5% 1%;
+    }
+
+    > section {
+        > article {
+            top: 3vh;
+            height: 15vh;
+        }
+    }
+
+    figcaption {
+        
+        h2 {
+            font-size: 32px;
+        }
+
+        h4 {
+            padding-top: 4vh;
+            font-size: 23px;
+        }
+
+        p {
+            min-height: 16vh;
+            font-size: 16px;
+        }
+
+        a {
+            padding: 1.5vh;
+        }
+    }
+
+}
+
+.eFeature {
+
+    row-gap: 7vh;
+
+    > section {
+        figure {
+            flex-direction: row;
+        }
+        img {
+            height: 32vh;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    > aside {
+
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        column-gap: 1.8%;
+
+        a {
+            flex-grow: 1;
+            transition: 0.5s;
+            width: unset;
+
+            &:hover {
+                flex-grow: 5.5;
+            }
+        }
+
+        figure {
+            height: 50vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 900px;
+        }
+    }
+}
+
+
+.eCategory {
+
+    padding-bottom: 1vh;
+   
+    figure {
+        width: 33vh;
+        height: 15vh;
+        cursor: pointer;
+        border-radius: 1vh;
+
+        &:hover figcaption {
+            display: flex;
+        }
+    }
+
+}
+
+.eList {
+    
+    padding-bottom: 3vh;
+    row-gap: 6vh;
+
+    summary {
+        transition: .4s;
+        &:hover {
+            background-color: $mainColor;
+            color: white;
+        }
+    }
+
+    img {
+        height: 32vh;
+    }
+
+    a:hover {
+        color: $mainColor;
+    }
+    
+    details {
+        iframe {
+            height: 22vh;
+        }
+    }
+
+}
+
+.eArticle {
+    > section {
+        > article {
+            height: 40vh;
+        }
+    }
+
+    aside {
+        row-gap: 3vh;
+    }
+
+    a {
+        padding: 1%;
+    }
+}
+
+.eRegister {
+
+    > section {
+        width: 60%;
+    }
+
+    input, textarea, select {
+        padding: 1.4%;
+    }
+}

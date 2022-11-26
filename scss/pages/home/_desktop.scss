@@ -89,6 +89,7 @@
     }
 }
 
+// contact
 .contact {
     @include flexRow(4%);
     align-items: flex-start;
@@ -117,6 +118,7 @@
         [type="submit"] {
             padding: 1vh 0;
             transition: .3s;
+            cursor: pointer;
         }
 
         [type="submit"]:hover {
