@@ -1,0 +1,272 @@
+// header
+header.y_header {
+    height: 60vh;
+    h2 {
+        font-size: 34px;
+    }
+    p {
+        width: 60%;
+    }
+    form {
+        width: 40%;
+        padding-top: 4vh;
+        input{
+            padding: 2vh;
+        }
+
+        input::placeholder {
+            font-size: 16px;
+        }
+
+        [type="submit"] {
+            transition: .3s;
+        }
+        [type="submit"]:hover {
+            background-color: $subColor2;
+        }
+    }
+
+}
+// main
+main {
+    > section {
+        width: 100%;  
+        padding: 15vh 0;  
+        
+        h4 {
+            font-size: 34px;
+        }    
+    }
+
+}
+    //restaurant 
+    .restaurant {
+        aside > a {
+            transition: .3s;
+            font-size: 12px;
+            padding: 1vh 1.5vh;
+        }
+
+        figcaption a{
+            width: 4vh;
+            height: 4vh;
+        }
+        i {
+            font-size: 12px;
+        }
+
+        a:hover {
+            background-color: $subColor1;
+            border: 1px solid $subColor1;
+            
+            i {
+                color: $whitegray;
+            }
+        }
+        section > article {
+            width: 24%;
+        }
+        figure {
+            height: 40vh;
+        }
+        article aside {
+            row-gap: 2vh;
+            h5 {
+                font-size: 16px;
+            }
+            address {
+                font-size: 12px;
+            }
+        }
+    }
+    // activities
+    .activities {
+        > section {
+            width: $contentRatioDes;
+            > article {
+                width: 100%;  
+            }
+        }
+        figure {
+            width: 100%;
+            height: 60vh;
+            transition: .3s;
+        } 
+        figcaption{
+            row-gap: 2vh;
+            padding: 0 0 5vh 5vh;
+            small {
+                font-size: 14px;
+            }
+            h5 {
+                font-size: 32px;
+            }
+            p {
+                font-size: 18px;
+                padding-bottom: 1.5vh;
+            }
+            a{
+                font-size: 16px;
+                transition: .3s;
+            }
+            a:hover {
+                background-color: $whitegray;
+                color: $mainColor;
+            }
+        }   
+        
+    }
+    // exhibition
+    .exhibition {
+        > section {
+            width: $contentRatioDes;
+            > section {
+                width: 100%;
+                row-gap: 4vh;
+                figure {
+                    width: 48%;
+                    height: 30vh;
+                }
+                figcaption {
+                    row-gap: 2vh;
+                }
+                h5 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 12px;
+                }
+                span {
+                    font-size: 14px;
+                }
+                a {
+                    width: 40%;
+                    padding: 1vh 0;
+                    font-size: 14px;
+                    text-align: center;
+                    transition: .3s;
+                }
+                a:hover {
+                    background-color: $mainColor;
+                    color: $whitegray;
+                }
+            }
+        }
+    }
+    // theatre
+    .theatre {
+        >article {
+            width: $contentRatioDes;
+            row-gap: 2vh;
+
+            h5 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 18px;
+            }
+            a {
+                transition: .3s;
+            }
+            a:hover {
+                color: $subColor1;
+            }
+        }
+        > section {
+            width: $contentRatioDes;
+
+            > article {
+                display: flex;
+                padding-bottom: 1vh;
+            }
+            > section {
+                >aside{
+                    section{
+                        row-gap: 1.5vh;
+                        h5{
+                            font-size: 30px;
+                            padding-bottom: .5vh;
+                            border-bottom: 1px solid;
+                        }
+                        small {
+                            padding-top: .5vh;
+                            font-size: 10px;
+                        }
+                        p {
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+                        address{
+                            display: block;
+                            font-size: 12px;
+                            padding-bottom: 4vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+     // review 
+     .review {
+        width: $contentRatioDes;
+        row-gap: 14vh;
+        > article {
+            row-gap: 3vh;
+            h5 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 18px;
+                width: 60%;
+            }
+            a {
+                transition: .3s;
+            }
+            a:hover {
+                color: $subColor1;
+            }
+        }
+
+        figure {
+            img{
+                width: 40vh;
+                height: 40vh;
+                box-shadow: 2px 2px 2vh;
+            }
+        }
+        blockquote {
+            row-gap: 3vh;
+            font-size: 20px;
+            cite{
+                font-size: 26px;
+            }
+        }
+        
+        aside {
+            column-gap: 3vh;
+            i {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // reference
+    .reference {
+        > section {
+            width: $contentRatioDes;
+        }
+
+        figcaption  {
+            a {
+                font-size: 16px;
+            }
+            a:hover {
+                color: $mainColor;
+                text-decoration: none;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }

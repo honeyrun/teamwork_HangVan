@@ -21,3 +21,18 @@
     flex-wrap: wrap;
     column-gap: $gap;
 }
+
+@mixin backImg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin flexAll ($col,$justify,$align,$cgap,$rgap) {
+    display: flex;
+    flex-direction: $col;
+    justify-content: $justify;
+    align-items: $align;
+    column-gap: $cgap;
+    row-gap: $rgap;
+}
